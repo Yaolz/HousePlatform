@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+                            http://www.springframework.org/schema/aop
+                            http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context-4.2.xsd
+                            http://www.springframework.org/schema/tx
+                            http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+
+    <!-- 指明一个properties配置文件 -->
+    <context:property-placeholder location="classpath:jdbc.properties"  />
+
+    <bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+        <property name="driver" value="${jdbc.connection.driverClassName}"></property>
+        <property name="driverUrl" value="${jdbc.connection.driverUrl}"></property>
+        <property name="user" value="${jdbc.connection.user}"></property>
+        <property name="password" value="${jdbc.connection.password}"></property>
+        <property name="houseKeepingTestSql" value="${proxool.houseKeepingTestSql}"/>
+        <!-- 最少保持的空闲连接数 （默认2个） -->
+        <property name="prototypeCount" value="${proxool.prototypeCount}"/>
+        <!-- proxool自动侦察各个连接状态的时间间隔(毫秒),侦察到空闲的连接就马上回收,超时的销毁 默认30秒） -->
+        <property name="houseKeepingSleepTime" value="${proxool.hourseKeepingSleepTime}"/>
+        <!-- 最大活动时间(超过此时间线程将被kill,默认为5分钟) -->
+        <property name="maximumActiveTime" value="${proxool.maximumActiveTime}"/>
+        <!-- 连接最长时间(默认为4个小时) -->
+        <property name="maximumConnectionLifetime" value="${proxool.maximumConnectionLifetime}"/>
+        <!-- 最小连接数 （默认2个） -->
+        <property name="minimumConnectionCount" value="${proxool.minimumConnectionCount}"/>
+        <!-- 最大连接数 （默认5个） -->
+        <property name="maximumConnectionCount" value="${proxool.maximumConnectionCount}"/>
+        <property name="alias" value="${proxool.alias}"/>
+        <property name="simultaneousBuildThrottle" value="${proxool.simultaneousBuildThrottle}"/>
+    </bean>
+
+    <!-- 使用spring的orm提供的SessionFactoryBean组件去获取Hibernate的连接工厂 -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+                <prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+            </props>
+        </property>
+        <property name="packagesToScan" value="com.ht.*" />
+        <!-- mappingResources默认到src根目录下去查找映射文件，所以不需要指定classpath:
+            这种方式不支持*通配符，只能是一个一个列出来
+         -->
+        <!-- mappingLocations的方式可以使用通配符，并且必须指明到文件，package部分也能支持通配符
+            mappingDirectoryLocations的方式只需要指明到目录
+         -->
+        <!--<property name="mappingLocations">-->
+            <!--<list>-->
+                <!--<value>classpath:/com/lb/bean/*.hbm.xml</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    </bean>
+
+    <!-- 配置需要用到的事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <!-- 对哪个连接工厂进行事务管理 -->
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!-- 开启使用注解管理aop事务 -->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="transactionManager"/>
+
+
+    <context:component-scan base-package="com.ht"></context:component-scan>
+
+    <context:annotation-config></context:annotation-config>
+    <bean id="missionDAO" class="com.ht.dao.impl.MissionDAOImpl" autowire="byName"></bean>
+    <bean id="missionService" class="com.ht.service.impl.MissionServiceImpl" autowire="byName"/>
+
+    <bean id="buildingPriceDAO" class="com.ht.dao.impl.BuildingPriceDAOImpl" autowire="byName"></bean>
+    <bean id="buildingPriceService" class="com.ht.service.impl.BuildingPriceServiceImpl" autowire="byName"/>
+
+    <bean id="roomDAO" class="com.ht.dao.impl.RoomDAOImpl" autowire="byName"></bean>
+    <bean id="roomService" class="com.ht.service.impl.RoomServiceImpl" autowire="byName"/>
+
+    <bean id="agencyPriceDAO" class="com.ht.dao.impl.AgencyPriceDAOImpl" autowire="byName"></bean>
+    <bean id="agencyPriceService" class="com.ht.service.impl.AgencyPriceServiceImpl" autowire="byName"/>
+
+    <bean id="adminDAO" class="com.ht.dao.impl.AdminDAOImpl" autowire="byName"></bean>
+    <bean id="adminService" class="com.ht.service.impl.AdminServiceImpl" autowire="byName"/>
+    <bean id="adminAction" class="com.ht.controller.AdminAction" autowire="byName"/>
+
+	<bean id="activityDAO" class="com.ht.dao.impl.ActivityDAOImpl" autowire="byName"></bean>
+    <bean id="activityService" class="com.ht.service.impl.ActivityServiceImpl" autowire="byName"/>
+    <bean id="activityAction" class="com.ht.controller.ActivityAction" autowire="byName"/>
+	
+    <bean id="adsDAO" class="com.ht.dao.impl.AdsDAOImpl" autowire="byName"></bean>
+    <bean id="adsService" class="com.ht.service.impl.AdsServiceImpl" autowire="byName"/>
+
+    <bean id="agencyDAO" class="com.ht.dao.impl.AgencyDAOImpl" autowire="byName"></bean>
+    <bean id="agencyService" class="com.ht.service.impl.AgencyServiceImpl" autowire="byName"/>
+
+    <bean id="appointmentDAO" class="com.ht.dao.impl.AppointmentDAOImpl" autowire="byName"></bean>
+    <bean id="appointmentService" class="com.ht.service.impl.AppointmentServiceImpl" autowire="byName"/>
+
+    <bean id="articleDAO" class="com.ht.dao.impl.ArticleDAOImpl" autowire="byName"></bean>
+    <bean id="articleService" class="com.ht.service.impl.ArticleServiceImpl" autowire="byName"/>
+
+    <bean id="articleTypeDAO" class="com.ht.dao.impl.ArticleTypeDAOImpl" autowire="byName"></bean>
+    <bean id="articleTypeService" class="com.ht.service.impl.ArticleTypeServiceImpl" autowire="byName"/>
+
+    <bean id="buildingsDAO" class="com.ht.dao.impl.BuildingsDAOImpl" autowire="byName"></bean>
+    <bean id="buildingsService" class="com.ht.service.impl.BuildingsServiceImpl" autowire="byName"/>
+
+    <bean id="buildingDAO" class="com.ht.dao.impl.BuildingDAOImpl" autowire="byName"></bean>
+    <bean id="buildingService" class="com.ht.service.impl.BuildingServiceImpl" autowire="byName"/>
+
+    <bean id="buildingsImgDAO" class="com.ht.dao.impl.BuildingsImgDAOImpl" autowire="byName"></bean>
+    <bean id="buildingsImgService" class="com.ht.service.impl.BuildingsImgServiceImpl" autowire="byName"/>
+
+    <bean id="commentDAO" class="com.ht.dao.impl.CommentDAOImpl" autowire="byName"></bean>
+    <bean id="commentService" class="com.ht.service.impl.CommentServiceImpl" autowire="byName"/>
+
+    <bean id="employeeDAO" class="com.ht.dao.impl.EmployeeDAOImpl" autowire="byName"></bean>
+    <bean id="employeeService" class="com.ht.service.impl.EmployeeServiceImpl" autowire="byName"/>
+
+    <bean id="historyDAO" class="com.ht.dao.impl.HistoryDAOImpl" autowire="byName"></bean>
+    <bean id="historyService" class="com.ht.service.impl.HistoryServiceImpl" autowire="byName"/>
+
+    <bean id="houseDAO" class="com.ht.dao.impl.HouseDAOImpl" autowire="byName"></bean>
+    <bean id="houseService" class="com.ht.service.impl.HouseServiceImpl" autowire="byName"/>
+
+    <bean id="likeDAO" class="com.ht.dao.impl.LikeDAOImpl" autowire="byName"></bean>
+    <bean id="likeService" class="com.ht.service.impl.LikeServiceImpl" autowire="byName"/>
+
+    <bean id="messageDAO" class="com.ht.dao.impl.MessageDAOImpl" autowire="byName"></bean>
+    <bean id="messageService" class="com.ht.service.impl.MessageServiceImpl" autowire="byName"/>
+
+    <bean id="roleDAO" class="com.ht.dao.impl.RoleDAOImpl" autowire="byName"></bean>
+    <bean id="roleService" class="com.ht.service.impl.RoleServiceImpl" autowire="byName"/>
+
+    <bean id="saleDAO" class="com.ht.dao.impl.SaleDAOImpl" autowire="byName"></bean>
+    <bean id="saleService" class="com.ht.service.impl.SaleServiceImpl" autowire="byName"/>
+
+    <bean id="user" class="com.ht.bean.User"/>
+    <bean id="userDAO" class="com.ht.dao.impl.UserDAOImpl" autowire="byName"/>
+    <bean id="userService" class="com.ht.service.impl.UserServiceImpl" autowire="byName"/>
+    <bean id="userAction" class="com.ht.controller.UserAction" autowire="byName"/>
+
+    <bean id="staffAction" class="com.ht.controller.StaffAction" autowire="byName"/>
+
+    <bean id="customerAction" class="com.ht.controller.CustomerAction" autowire="byName"/>
+    <bean id="customerDAO" class="com.ht.dao.impl.CustomerDAOImpl" autowire="byName"/>
+    <bean id="customerService" class="com.ht.service.impl.CustomerServiceImpl" autowire="byName"/>
+
+    <bean id="agencyAction" class="com.ht.controller.AgencyAction" autowire="byName"/>
+
+    <bean id="publicLoginAction" class="com.ht.controller.PublicLoginAction" autowire="byName"/>
+
+
+</beans>

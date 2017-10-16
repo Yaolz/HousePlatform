@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.i18n.reload" value="false" />
+	<constant name="struts.configuration.xml.reload" value="false" />
+	<constant name="struts.action.extension" value="action,do," />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.multipart.maxSize" value="209715200"/>
+	<!--
+                struts.serve.static.browserCache
+                该属性设置浏览器是否缓存静态内容。当应用处于开发阶段时，我们希望每次请求都获得服务器的最新响应，则可设置该属性为false。
+
+
+                struts.i18n.reload
+                该属性设置是否每次HTTP请求到达时，系统都重新加载资源文件。该属性默认值是false。
+                在开发阶段将该属性设置为true会更有利于开发，但在产品发布阶段应将该属性设置为false。
+                提示：开发阶段将该属性设置了true，将可以在每次请求时都重新加载国际化资源文件，
+                从而可以让开发者看到实时开发效果；产品发布阶段应该将该属性设置为 false，
+                是为了提供响应性能，每次请求都需要重新加载资源文件会大大降低应用的性能。
+    -->
+	<package name="base-package" extends="json-default">
+
+		<interceptors>
+			<interceptor name="AdminInterceptor" class="com.ht.interceptor.AdminInterceptor" />
+			<interceptor name="UserInterceptor" class="com.ht.interceptor.UserLoginInterceptor" />
+			<interceptor name="AgencyInterceptor" class="com.ht.interceptor.AgencyLoginInterceptor" />
+			<interceptor name="EmpInterceptor" class="com.ht.interceptor.EmpLoginInterceptor" />
+			<!-- 自定义拦截器栈 -->
+			<interceptor-stack name="my-stack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="AdminInterceptor" />
+				<interceptor-ref name="UserInterceptor" />
+				<interceptor-ref name="AgencyInterceptor" />
+				<interceptor-ref name="EmpInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+
+		<global-results>
+			<result name="myerror">/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception" result="myerror"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+
+	<package name="default" extends="struts-default">
+		<default-action-ref name="notFound" />
+		<action name="notFound">
+			<result>/404.jsp</result>
+		</action>
+	</package>
+
+	<!-- 在src根目录下才能使用*-->
+	<include file="../config/struts-like.xml"/>
+	<include file="../config/struts-appointment.xml"/>
+	<include file="../config/struts-comment.xml"/>
+	<include file="../config/struts-history.xml"/>
+	<include file="../config/struts-message.xml"/>
+	<include file="../config/struts-user.xml"/>
+	<include file="../config/struts-admin.xml"/>
+	<include file="../config/struts-staff.xml"/>
+	<include file="../config/struts-agency.xml"/>
+	<include file="../config/struts-articletype.xml"/>
+	<include file="../config/struts-article.xml"/>
+	<include file="../config/struts-customer.xml"/>
+	<include file="../config/struts-ads.xml"/>
+	<include file="../config/struts-buildings.xml"/>
+	<include file="../config/struts-activity.xml"/>
+	<include file="../config/struts-building.xml"/>
+	<include file="../config/struts-house.xml"/>
+	<include file="../config/struts-test.xml"/>
+	<include file="../config/struts-public.xml"/>
+	<include file="../config/struts-employee.xml"/>
+	<include file="../config/struts-buildingsImg.xml"/>
+	<include file="../config/struts-mission.xml"/>
+	<include file="../config/struts-room.xml"/>
+	<include file="../config/struts-download.xml"/>
+	<include file="../config/struts-sale.xml"/>
+</struts>

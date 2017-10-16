@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="agency_package" namespace="/agency" extends="base-package">
+        <action name="*" class="agencyAction" method="{1}">
+
+            <result name="register">/agency/agencyRegister.jsp</result>
+            <!--<result name="waitaudit" type="json"></result>-->
+            <result name="updateAgencyPwd" type="json"></result>
+            <result name="AgencyMessage">/agency/agencyMessage.jsp</result>
+            <result name="agencyAllPage">/admin/agencyAll.jsp</result>
+            <result name="agencyAll" type="json"></result>
+            <result name="agencyCheck" type="json"></result>
+            <result name="agencyCheckPage">/admin/agencyCheck.jsp</result>
+            <result name="checkChange" type="redirect">agencyCheckPage</result>
+            <result name="agencyStatus" type="json"></result>
+            <result name="agencyStatusPage">/admin/agencyStatus.jsp</result>
+            <result name="statusChange" type="json"></result>
+            <result name="agencyDetail">/admin/agencyDetail.jsp</result>
+            <result name="agencyDetailPage">/admin/agencyDetail.jsp</result>
+
+            <result name="Message">/agency/agencyMessage.jsp</result>
+
+            <result name="updatepwd">/agency/updatepwd.jsp</result>
+            <result name="addEmployee">/agency/addEmployee.jsp</result>
+            <result name="allEmployee" type="json"></result>
+            <result name="allEmployeePage">/agency/allEmployee.jsp</result>
+
+            <result name="agencyloginpage">/agency/agencylogin.jsp</result>
+            <result name="agencylogin" type="json"></result>
+            <result name="updateAgency" type="json"></result>
+            <result name="queryAgency" type="json"></result>
+        </action>
+
+        <action name="Agency" class="agencyAction">
+            <interceptor-ref name="AgencyInterceptor" />
+            <interceptor-ref name="defaultStack" />
+            <result name="success">/agency/agency.jsp</result>
+            <result name="login">/index/index.jsp</result>
+        </action>
+
+    </package>
+</struts>

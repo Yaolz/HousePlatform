@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="ads-package" namespace="/ads" extends="base-package">
+        <action name="*" class="adsAction" method="{1}">
+            <result name="adsAddpage">/admin/AdsAdd.jsp</result>
+            <result name="adsAdd" type="json"></result>
+            <result name="adsAllPage">/admin/adsAll.jsp</result>
+            <result name="adsAll" type="json"></result>
+            <result name="statusChang" type="redirect">adsAllPage</result>
+            <result name="adsChangeInfo" type="json"></result>
+            <result name="adsShow" type="json"></result>
+        </action>
+    </package>
+</struts>

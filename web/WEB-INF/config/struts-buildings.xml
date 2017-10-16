@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="buildings-package" namespace="/buildings" extends="base-package">
+        <action name="*" class="buildingsAction" method="{1}">
+            <result name="totalbuildings">/agency/totalbuildings.jsp</result>
+            <result name="addbuildingspage">/agency/addbuildings.jsp</result>
+            <result name="admBuildingsPage">/admin/buildingsInfo.jsp</result>
+            <result name="admBuildingsDet">/admin/buildingsDetaile.jsp</result>
+            <result name="admBuildingsAll" type="json"></result>
+            <result name="addbuildings" type="json"></result>
+            <result name="buildingsDetail" type="json"></result>
+            <result name="queryBuildingsPrice" type="json"></result>
+            <result name="allBuildings" type="json"></result>
+            <result name="updatestatus" type="json"></result>
+            <result name="updateBuildings" type="json"></result>
+            <result name="indexBuildings" type="json"></result>
+            <result name="indexBuildingsDetail" type="json"></result>
+            <result name="indexBuildingsDetailPage">/index/buildings/indexBuildings.jsp</result>
+            <result name="navBuildingsPage">/index/buildings/buildingsInfo.jsp</result>
+            <result name="avgPricePage">/index/buildings/oldPrice.jsp</result>
+            <result name="avgPrice" type="json"></result>
+        </action>
+    </package>
+</struts>

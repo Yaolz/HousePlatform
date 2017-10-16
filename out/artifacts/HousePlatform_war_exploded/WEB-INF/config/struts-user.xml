@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="user_package" namespace="/user" extends="base-package">
+        <action name="*" class="userAction" method="{1}">
+            <result name="regPage">/user/userRegister.jsp</result>
+            <result name="index">/index.jsp</result>
+            <result name="loginPage">/user/userLogin.jsp</result>
+
+            <result name="information">/user/userInformation.jsp</result>
+            <result name="informationJson" type="json"></result>
+
+            <result name="updatePwd">/user/userUpdatePwd.jsp</result>
+            <result name="update" type="json"></result>
+            <result name="checkPwd" type="json"></result>
+
+            <!--<result name="home">/user/user.jsp</result>-->
+
+
+            <result name="save" type="json"></result>
+            <result name="login" type="json"></result>
+            <!--<result name="reg" type="json"></result>-->
+            <result name="userAlljson" type="json"></result>
+            <result name="userAll">/admin/userInfo.jsp</result>
+            <result name="queryUser" type="json"></result>
+            <result name="userDetail">/admin/userDetail.jsp</result>
+            <result name="status" type="redirect">userAll</result>
+        </action>
+
+        <action name="home" class="userAction">
+            <interceptor-ref name="UserInterceptor" />
+            <interceptor-ref name="defaultStack" />
+            <result name="success">/user/user.jsp</result>
+            <result name="login">/index/index.jsp</result>
+        </action>
+    </package>
+</struts>

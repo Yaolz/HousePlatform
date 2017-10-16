@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="staff" namespace="/staff" extends="base-package">
+        <action name="*" class="staffAction" method="{1}">
+            <result name="regPage">/dealerStaff/staffRegister.jsp</result>
+            <result name="reg" type="json"></result>
+            <result name="save" type="json"></result>
+            <result name="cancel" type="json"></result>
+            <result name="confirm" type="json"></result>
+            <result name="cusCheckJson" type="json"></result>
+            <result name="sellRecordJson" type="json"></result>
+            <result name="appointmentJson" type="json"></result>
+            <result name="missionJson" type="json"></result>
+            <result name="employeeDetail" type="json"></result>
+            <result name="checkPwd" type="json"></result>
+            <result name="staffCenterJson" type="json"></result>
+            <result name="out" type="json"></result>
+            <result name="index" type="json"></result>
+            <result name="queryBySale" type="json"></result>
+            <!--<result name="home">/dealerStaff/staff.jsp</result>-->
+            <result name="cusCheck">/dealerStaff/customerCheck.jsp</result>
+            <result name="loginPage">/index/indexlogin.jsp</result>
+            <result name="sellRecord">/dealerStaff/sellRecord.jsp</result>
+            <result name="staffCenter">/dealerStaff/staffCenter.jsp</result>
+            <result name="editPwd">/dealerStaff/editPwd.jsp</result>
+            <result name="addClient">/dealerStaff/addClient.jsp</result>
+            <result name="addSell">/dealerStaff/addSell.jsp</result>
+            <result name="mission">/dealerStaff/mission.jsp</result>
+            <result name="houseHostCheck">/dealerStaff/houseHostCheck.jsp</result>
+            <result name="homeSellChart">/dealerStaff/allRoomPage.jsp</result>
+            <result name="appointment">/dealerStaff/appointment.jsp</result>
+        </action>
+
+        <action name="home" class="staffAction">
+            <interceptor-ref name="EmpInterceptor" />
+            <interceptor-ref name="defaultStack" />
+            <result name="success">/dealerStaff/staff.jsp</result>
+            <result name="login">/index/index.jsp</result>
+        </action>
+
+    </package>
+</struts>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="house" namespace="/house" extends="base-package">
+        <action name="*" class="houseAction" method="{1}">
+            <result name="addhousepage">/agency/addhouse.jsp</result>
+            <result name="addhouse" type="json"></result>
+            <result name="queryhouse" type="json"></result>
+            <result name="indexHouse" type="json"></result>
+            <result name="navHouse" type="json"></result>
+            <result name="allHouse" type="json"></result>
+            <result name="updateHouseStatus" type="json"></result>
+            <result name="updateHouse" type="json"></result>
+            <result name="allHousePage">/agency/allHousePage.jsp</result>
+            <result name="indexHouseDetail">/index/houses/houseDetail.jsp</result>
+            <result name="navHousePage">/index/buildings/allHouse.jsp</result>
+            <result name="housePage" type="json"></result>
+        </action>
+    </package>
+</struts>

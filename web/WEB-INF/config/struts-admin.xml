@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="admin-package" namespace="/admin" extends="base-package">
+        <action name="*" class="adminAction" method="{1}">
+            <result name="loginpage">/admin/adminlogin.jsp</result>
+            <result name="login" type="json"></result>
+            <result name="out" type="json"></result>
+            <result name="outPage">/index.jsp</result>
+            <result name="addArticleType" type="json"></result>
+            <result name="queryInfoPage">/admin/adminInfo.jsp</result>
+            <result name="queryInfo" type="json"></result>
+            <result name="updateAdmin" type="json"></result>
+            <result name="checkPwd" type="json"></result>
+            <result name="changePwd" type="json"></result>
+            <result name="area">/admin/area.jsp</result>
+        </action>
+
+        <action name="home" class="adminAction">
+            <interceptor-ref name="AdminInterceptor" />
+            <interceptor-ref name="defaultStack" />
+            <result name="success">/admin/admin.jsp</result>
+            <result name="login">/admin/adminlogin.jsp</result>
+        </action>
+
+    </package>
+</struts>

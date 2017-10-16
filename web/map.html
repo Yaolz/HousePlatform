@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度地图</title>
+</head>
+<body>
+
+<input type="hidden" id="longitude" value="${requestScope.buildings.longitude}">
+<input type="hidden" id="latitude" value="${requestScope.buildings.latitude}">
+<div id="map" style="width: 700px;height: 500px;"></div>
+<a href="http://api.map.baidu.com/lbsapi/getpoint/index.html" target="_blank">坐标拾取</a>
+
+<script src="http://api.map.baidu.com/api?v=2.0&ak=KjEQlPmSO1aM6G9cFGCQd7WL0arGC6zE"></script>
+<script type="text/javascript">
+
+    var points = [
+        {"lng":112.57,"lat":26.88,"url":"http://www.csdn.com","id":3,"name":"p3"}
+    ];
+
+    var map = new BMap.Map("map");    // 创建Map实例
+    var point = new BMap.Point(114.9393,25.8267); // 经纬度  将经纬度id赋值到此处
+    map.centerAndZoom(point, 13);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);               // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    (function() {
+
+        marker.addEventListener("click",
+            function() {
+                //获取点的信息
+                var sContent =
+                    '<ul style="margin:0 0 5px 0;padding:0.2em 0">'
+                    +'<li style="line-height: 26px;font-size: 15px;">'
+                    +'<span style="width: 50px;display: inline-block;">id：</span>' + point.id + '</li>'
+                    +'<li style="line-height: 26px;font-size: 15px;">'
+                    +'<span style="width: 50px;display: inline-block;">名称：</span>' + point.name + '</li>'
+                    +'<li style="line-height: 26px;font-size: 15px;"><span style="width: 50px;display: inline-block;">查看：</span><a href="'+point.url+'">详情</a></li>'
+                    +'</ul>';
+                var infoWindow = new BMap.InfoWindow(sContent); //创建信息窗口对象
+                this.openInfoWindow(infoWindow); //图片加载完后重绘infoWindow
+            });
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="comment_package" namespace="/comment" extends="base-package">
+        <action name="*" class="commentAction" method="{1}">
+            <result name="addComments" type="json"></result>
+            <result name="comments">/user/userComments.jsp</result>
+            <result name="updateComment" type="json"></result>
+            <result name="status" type="redirect">comments</result>
+            <result name="buildingsCommentPage">/index/buildings/buildingsComment.jsp</result>
+            <result name="buildingsComment" type="json"></result>
+            <result name="pagerByBuildings" type="json"></result>
+            <result name="pagerByBuildingsPage">/agency/allComment.jsp</result>
+        </action>
+
+    </package>
+
+</struts>

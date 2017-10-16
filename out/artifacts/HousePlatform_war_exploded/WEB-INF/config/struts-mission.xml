@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="mission_package" namespace="/mission" extends="base-package">
+        <action name="*" class="missionAction" method="{1}">
+            <result name="allmissionpage" >/agency/allmissionpage.jsp</result>
+            <result name="addmission" type="json"></result>
+            <result name="allmission" type="json"></result>
+            <result name="updatequantity" type="json"></result>
+            <result name="updatepercent" type="json"></result>
+            <result name="updateStatus" type="json"></result>
+            <result name="allEmployeeMission" type="json"></result>
+            <result name="addMessage" type="json"></result>
+            <result name="buildingsMessage" type="json"></result>
+        </action>
+
+    </package>
+
+</struts>

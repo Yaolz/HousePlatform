@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="history_package" namespace="/history" extends="base-package">
+        <action name="*" class="historyAction" method="{1}">
+            <result name="history">/user/userHistory.jsp</result>
+            <result name="deleteHistory" type="redirect">history</result>
+            <result name="addHistory">/index/buildings/indexBuildings.jsp</result>
+        </action>
+
+    </package>
+
+</struts>

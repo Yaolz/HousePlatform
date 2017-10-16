@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="customer" namespace="/cus" extends="base-package">
+        <action name="*" class="customerAction" method="{1}">
+            <result name="add" type="json"></result>
+            <result name="cusSingleCheck" type="json"></result>
+            <result name="cusSave" type="json"></result>
+            <result name="queryCustomer" type="json"></result>
+            <result name="sellSave" type="json"></result>
+            <result name="contract" type="json"></result>
+            <result name="archives" type="json"></result>
+            <result name="cusCheckJson" type="json"></result>
+            <result name="updateStatus" type="json"></result>
+            <result name="cusCheck">/dealerStaff/customerCheck.jsp</result>
+            <result name="cusPage">/dealerStaff/customerCheck.jsp</result>
+            <result name="sellRecord">/dealerStaff/sellRecord.jsp</result>
+            <result name="appoint">/dealerStaff/appointment.jsp</result>
+            <result name="status" type="redirect">cusCheck</result>
+            <result name="saleStatus" type="redirect">sellRecord</result>
+            <result name="appStatus" type="redirect">appoint</result>
+            <result name="agencyaddcustomerpage">/agency/addCustomer.jsp</result>
+            <result name="pagerByStatus" type="json"></result>
+            <result name="customerPage">/agency/allCustomer.jsp</result>
+        </action>
+    </package>
+</struts>

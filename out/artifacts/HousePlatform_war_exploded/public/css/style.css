@@ -1,0 +1,5738 @@
+@charset "utf-8";
+/*重置滚动条美化插件*/
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: #eee;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 5px;
+    background: #8c8c8c;
+    border-radius: 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: #666
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background: rgba(0, 0, 0, 0.9);
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)"; /* old ie */
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 5px;
+}
+
+/*标题/global*/
+.win-title {
+    height: 40px;
+    margin: 10px 0 20px;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+}
+
+.win-title .tit {
+    font-weight: normal;
+    color: #333;
+    float: left;
+    border-bottom: solid 1px #000;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.win-title small {
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    padding: 15px 0 0 15px
+}
+
+.win-title a {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.win-title a:hover {
+    color: #ff6159;
+}
+
+/*粉红色按钮/global*/
+.btn-red {
+    background: #ff6159;
+    color: #fff !important;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-red:hover {
+    background: #f35951 !important;
+}
+
+/*黄色按钮/global*/
+.btn-yellow {
+    background: #fc883b;
+    color: #fff !important;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-yellow:hover {
+    background: #ee7b2f !important;
+}
+
+/*边框按钮*/
+.btn-line-red {
+    display: inline-block;
+    color: #ff343e;
+    font-size: 14px;
+    padding: 0 13px;
+    line-height: 30px;
+    border: solid 1px #ff343e;
+    transition: all ease .3s;
+    text-align: center;
+}
+
+.btn-line-red:hover {
+    background: #ff343e;
+    color: #fff;
+}
+
+.btn-line-yellow {
+    transition: all ease .3s;
+    text-align: center;
+    display: inline-block;
+    color: #fea135;
+    font-size: 14px;
+    padding: 0 13px;
+    line-height: 30px;
+    border: solid 1px #fea135;
+}
+
+.btn-line-yellow:hover {
+    background: #fea135;
+    color: #fff;
+}
+
+/*底部通栏/global*/
+.banner-ad {
+    padding: 15px 0;
+}
+
+/*两栏/global*/
+.AreaL {
+    width: 905px;
+    float: left;
+}
+
+.AreaR {
+    width: 280px;
+    float: right;
+}
+
+/*分享按钮*/
+.bdsharebuttonbox {
+    padding-left: 10px;
+}
+
+.bdsharebuttonbox a {
+    margin: 2px 5px 0 0 !important;
+}
+
+/**
+ *	首页
+ */
+.index .win-title .tit {
+    font-size: 21px;
+}
+
+/*品牌实力*/
+.ability div a {
+    float: left;
+    margin: 0 1px 0 0;
+    width: 239px;
+    height: 224px;
+    background: #ededed;
+    text-align: center;
+}
+
+.ability div .ico {
+    display: block;
+    width: 70px;
+    height: 60px;
+    background: #ccc;
+    margin: 45px auto 0;
+    background: url(http://icon.dyrs.cc/ico3.png!c) no-repeat;
+}
+
+.ability div .ico-1 {
+    background-position: 7px 0
+}
+
+.ability div a:hover .ico-1 {
+    background-position: 7px -62px;
+}
+
+.ability div .ico-2 {
+    background-position: -65px 0
+}
+
+.ability div a:hover .ico-2 {
+    background-position: -65px -62px;
+}
+
+.ability div .ico-3 {
+    background-position: -132px 0;
+}
+
+.ability div a:hover .ico-3 {
+    background-position: -132px -62px;
+}
+
+.ability div .ico-4 {
+    background-position: -208px 0;
+}
+
+.ability div a:hover .ico-4 {
+    background-position: -208px -62px;
+}
+
+.ability div .ico-5 {
+    background-position: -280px 0;
+}
+
+.ability div a:hover .ico-5 {
+    background-position: -280px -62px;
+}
+
+.ability div .tit {
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.ability div .line {
+    width: 65px;
+    height: 1px;
+    overflow: hidden;
+    background: #d4d4d4;
+    margin: 0 auto;
+}
+
+.ability div .con {
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+.ability div a:hover {
+    color: #fff;
+    background: #f1544b;
+    transition: transform ease .2s;
+    -webkit-transition: transform ease .2s;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform-origin: center top;
+    -webkit-transform-origin: center top;
+}
+
+.ability div a:hover .tit {
+    border-color: #fff;
+}
+
+.ability div a:hover .ico {
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+}
+
+/*案例展示*/
+.case-show {
+    width: 1216px;
+}
+
+.case-show img {
+    display: block;
+    margin: 0 auto;
+}
+
+.case-show .item {
+    margin: 0 16px 16px 0;
+    position: relative;
+    float: left;
+    width: 288px;
+    height: 251px;
+}
+
+.case-show a {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: #fff;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    font-size: 16px;
+    background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==);
+}
+
+.case-show a:hover {
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.case-show a span {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 100px;
+    display: block;
+}
+
+.case-show .svg {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    overflow: hidden;
+}
+
+.case-show .svg span {
+    position: absolute;
+    background: #fff;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.case-show .svg .left {
+    width: 1px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.case-show .svg .right {
+    width: 1px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.case-show .svg .top {
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 0;
+}
+
+.case-show .svg .bottom {
+    width: 100%;
+    height: 1px;
+    right: 0;
+    bottom: 0;
+}
+
+.case-show .item:hover .left, .case-show .item:hover .right {
+    height: 15px;
+}
+
+.case-show .item:hover .bottom, .case-show .item:hover .top {
+    width: 15px;
+}
+
+.case-list {
+    background: #f8f8f8;
+    height: 120px;
+    padding: 15px 0;
+}
+
+.case-list a {
+    display: block;
+    text-align: center
+}
+
+.case-list img {
+    display: block;
+    width: 89px;
+    height: 89px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all ease .3s;
+    -webkit-transition: all ease .2s;
+}
+
+.case-list .col {
+    float: left;
+    width: 150px;
+}
+
+.case-list a:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2)
+}
+
+.case-more {
+    display: block;
+    width: 225px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    text-align: center;
+    border: solid 1px #ddd;
+    margin: 25px auto 0;
+}
+
+.case-more:hover {
+    color: #ff343e;
+    border-color: #ff343e;
+}
+
+/*设计团队*/
+.design-Team .slides {
+    border: solid 1px #656565;
+    width: 468px;
+    height: 482px;
+    overflow: hidden;
+    position: relative;
+}
+
+.design-Team .slides .slidesjs-navigation {
+    position: absolute;
+    top: 50%;
+    display: block;
+    height: 30px;
+    width: 16px;
+    margin-top: -15px;
+    overflow: hidden;
+    text-indent: -20000px;
+    background: url(http://icon.dyrs.cc/ico.png!c) -78px -34px no-repeat;
+    z-index: 99;
+    opacity: .5;
+}
+
+.design-Team .slides:hover .slidesjs-navigation {
+    opacity: 1;
+}
+
+.design-Team .slides .slidesjs-previous {
+    left: 20px;
+}
+
+.design-Team .slides .slidesjs-next {
+    right: 20px;
+    background-position: -94px -34px;
+}
+
+.design-Team .slidesjs-pagination {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.design-Team .slidesjs-pagination li {
+    display: inline;
+}
+
+.design-Team .slidesjs-pagination li a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 15px;
+    height: 17px;
+    line-height: 99px;
+    overflow: hidden;
+    background: url(http://icon.dyrs.cc/ico.png!c) -87px -84px no-repeat;
+    margin: 0 5px;
+    cursor: pointer;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.design-Team .slidesjs-pagination li a.active {
+    background-position: -87px -66px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.design-Team {
+    background: white;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.design-Team .win-title {
+    border-color: #5d5d5d;
+}
+
+.design-Team .win-title .tit {
+    color: #fff;
+    border-color: #fff;
+}
+
+.design-Team .win-title small {
+    color: #fff;
+}
+
+.design-Team .win-title a:hover {
+    color: #fff;
+}
+
+.design-Team .col-xs-5 {
+    width: 470px;
+}
+
+.design-Team .col-xs-7 {
+    width: 59%;
+}
+
+.design-Team .col-xs-7 .row {
+    width: 150%;
+}
+
+.design-Team .item {
+    float: left;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    color: #989898;
+    margin: 0 0 17px 17px;
+    border: solid 1px #656565
+}
+
+.design-Team .item img {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.design-Team .design-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, .7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000, endcolorstr=#7F000000);
+    bottom: -80px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.design-Team .item:hover .design-info {
+    bottom: 0;
+}
+
+.design-Team .design-info .p1 {
+    margin-top: 10px;
+}
+
+.design-Team .design-info .name {
+    font-size: 14px;
+    color: #fff;
+}
+
+.design-Team .design-info .city {
+    color: #fff;
+}
+
+.design-Team .btnBox {
+    padding: 15px 0 35px;
+    clear: both;
+    font-size: 16px;
+}
+
+.design-Team .btnBox a {
+    display: inline-block;
+    width: 225px;
+    height: 45px;
+    line-height: 45px;
+    border: solid 1px #888;
+    color: #888;
+    margin: 0 20px;
+}
+
+.design-Team .btnBox a:hover {
+    border-color: #ff343f;
+    color: #ff343f;
+}
+
+/*品牌保障*/
+.brand-ensure {
+    overflow: hidden;
+}
+
+.brand-ensure .row {
+    width: 1250px
+}
+
+.brand-ensure .item {
+    float: left;
+    border: solid 1px #ddd;
+    overflow: hidden;
+    width: 290px;
+    box-shadow: 0 1px 2px #ddd;
+    margin: 0 10px 5px 0;
+}
+
+.brand-ensure .item .pic {
+    display: block;
+    height: 230px;
+}
+
+.brand-ensure .item h4 {
+    font-size: 20px;
+    color: #454545;
+    padding: 5px 0 0 18px;
+    font-weight: normal;
+}
+
+.brand-ensure .item p {
+    padding: 0 18px 15px;
+    overflow: hidden;
+}
+
+.brand-ensure .item span {
+    font-size: 14px;
+    color: #464646;
+}
+
+/*无忧售后*/
+.service {
+    background: url(http://icon.dyrs.cc/bg1_repeat.gif!c); /* padding:40px 0 */
+}
+
+.service .animate {
+    height: 172px;
+    position: relative;
+}
+
+.service .hline {
+    height: 3px;
+    background: #ffd4d4;
+    position: relative;
+    top: 50%;
+}
+
+.service .txt {
+    position: absolute;
+    top: 82px;
+    height: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #969696;
+}
+
+.service li {
+    width: 12.5%;
+    float: left;
+    position: relative;
+}
+
+.service .t-1, .service .t-3, .service .t-5, .service .t-7 {
+    top: -35px;
+}
+
+.service .t-2, .service .t-4, .service .t-6, .service .t-8 {
+    bottom: -10px;
+}
+
+.service .point {
+    position: absolute;
+    width: 100%;
+    top: 78px;
+}
+
+.service .point .circle {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(http://icon.dyrs.cc/ico4.png!c) no-repeat -227px 0;
+    margin: 0 auto;
+}
+
+.service .point .vline {
+    width: 2px;
+    height: 21px;
+    background: #fccaca;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.service .p-1 .vline, .service .p-3 .vline, .service .p-5 .vline, .service .p-7 .vline {
+    top: 18px;
+}
+
+.service .p-2 .vline, .service .p-4 .vline, .service .p-6 .vline, .service .p-8 .vline {
+    bottom: 18px;
+    transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+}
+
+.service .point .ico {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background: url(http://icon.dyrs.cc/ico4.png!c) no-repeat;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.service .p-1 .ico, .service .p-3 .ico, .service .p-5 .ico, .service .p-7 .ico {
+    margin-top: 23px;
+}
+
+.service .p-2 .ico, .service .p-4 .ico, .service .p-6 .ico, .service .p-8 .ico {
+    margin-top: -90px;
+}
+
+.service .p-2 .ico {
+    background-position: -56px 0;
+}
+
+.service .p-3 .ico {
+    background-position: -112px 0;
+}
+
+.service .p-4 .ico {
+    background-position: -168px 0;
+}
+
+.service .p-5 .ico {
+    background-position: 0 -56px;
+}
+
+.service .p-6 .ico {
+    background-position: -56px -56px;
+}
+
+.service .p-7 .ico {
+    background-position: -112px -56px;
+}
+
+.service .p-8 .ico {
+    background-position: -168px -56px;
+}
+
+.service .animate.active .vline {
+    animation: vline ease 1s both;
+}
+
+.service .animate.active .ico {
+    animation: ico 1s both;
+}
+
+.service .animate.active .p-2 .ico, .animate.active .p-2 .vline {
+    animation-delay: .2s;
+}
+
+.service .animate.active .p-3 .ico, .animate.active .p-3 .vline {
+    animation-delay: .4s;
+}
+
+.service .animate.active .p-4 .ico, .animate.active .p-4 .vline {
+    animation-delay: .6s;
+}
+
+.service .animate.active .p-5 .ico, .animate.active .p-5 .vline {
+    animation-delay: .8s;
+}
+
+.service .animate.active .p-6 .ico, .animate.active .p-6 .vline {
+    animation-delay: 1s;
+}
+
+.service .animate.active .p-7 .ico, .animate.active .p-7 .vline {
+    animation-delay: 1.2s;
+}
+
+.service .animate.active .p-8 .ico, .animate.active .p-8 .vline {
+    animation-delay: 1.4s;
+}
+
+@keyframes vline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 21px;
+    }
+}
+
+@-webkit-keyframes vline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 21px;
+    }
+}
+
+@-webkit-keyframes ico {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes ico {
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.house-show li {
+    width: 234px;
+    height: 206px;
+    float: left;
+    margin: 30px 3px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.house-show li p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #4D4D4D;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.house-show li a {
+    color: #fff;
+}
+
+/*指南动态*/
+.guide-news {
+    background: grey;
+    margin-top: 25px;
+    padding: 10px 0;
+}
+
+.guide-news .tabTit {
+    border-bottom: solid 1px #f8f8f8;
+    margin: 0 0 20px;
+}
+
+.guide-news .tabTit .pull-right a {
+    font-size: 14px;
+    position: static;
+    margin: 0 10px;
+}
+
+.guide-news .tabTit .tit {
+    color: #c0c0c0;
+    border-color: #f8f8f8;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.guide-news .tabTit .tit.active {
+    color: #fff;
+    border-color: #fff;
+}
+
+.guide-news .tabLayer {
+    height: 390px;
+}
+
+.guide-news .tabLayer .pic {
+    float: left;
+    width: 590px;
+}
+
+.guide-news .tabLayer .picbox {
+    display: block;
+    height: 280px;
+}
+
+.guide-news .tabLayer .pic .info {
+    height: 75px;
+    background: #2a2a2a;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.guide-news .tabLayer .pic .info a {
+    color: #fff;
+}
+
+.guide-news .tabLayer .pic .info a:hover {
+    color: #ff343f;
+}
+
+.guide-news .tabLayer .pic .info h3 {
+    width: 450px;
+}
+
+.guide-news .tabLayer .pic .info .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.guide-news .tabLayer .pic .info .con {
+    height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.guide-news .tabLayer .list {
+    float: right;
+    width: 590px;
+    line-height: 24px;
+}
+
+.guide-news .tabLayer .list li {
+    height: 66px;
+    overflow: hidden;
+    background: #e5e5e5;
+    margin-bottom: 18px;
+    padding: 14px 10px 0 85px;
+    position: relative;
+}
+
+.guide-news .tabLayer .list .num {
+    height: 52px;
+    font-size: 24px;
+    border-right: solid 1px #c6c6c6;
+    float: left;
+    margin-left: -85px;
+    width: 70px;
+    text-align: center;
+    line-height: 52px;
+}
+
+.guide-news .tabLayer .list .date {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+.guide-news .tabLayer .list .strong {
+    width: 380px;
+    font-size: 14px;
+}
+
+.guide-news .tabLayer .list .strong a {
+    color: #333;
+}
+
+.guide-news .tabLayer .list .con {
+    width: 420px;
+    color: #666;
+}
+
+.guide-news .tabLayer .list li:hover {
+    background: #ea424e;
+    color: #fff;
+}
+
+.guide-news .tabLayer .list li:hover a {
+    color: #fff;
+}
+
+.guide-news .tabLayer .list li:hover .num {
+    border-color: #bc0001;
+}
+
+/*蒙层*/
+.topad {
+    min-height: 800px;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.topad .con {
+    position: relative;
+    z-index: 5;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.topad .shadow {
+    background: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.topad .text {
+    width: 464px;
+    height: 95px;
+    margin: 50px auto 40px;
+    background: url(http://icon.dyrs.cc/topad.png!c) no-repeat;
+}
+
+.topad .bar {
+    position: relative;
+    overflow: hidden;
+}
+
+.topad .bar .line {
+    width: 790px;
+    margin: 13px auto;
+    height: 1px;
+    background: #565656;
+    display: block;
+}
+
+.topad .bar .ico {
+    width: 26px;
+    height: 26px;
+    background: url(http://icon.dyrs.cc/topad.png!c) no-repeat -474px 0;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -13px;
+}
+
+.topad .bar .line span {
+    height: 1px;
+    width: 52px;
+    background: #333;
+    margin: 0 auto;
+    display: block;
+}
+
+.topad .list {
+    width: 820px;
+    height: 450px;
+    margin: 25px auto 0;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.topad .list img {
+    display: inline;
+    max-height: 100%;
+    width: auto;
+}
+
+.topad .list li {
+    text-align: center;
+    float: left;
+    width: 380px;
+    height: 100%;
+    margin: 0 15px;
+}
+
+.topad .list li a:hover {
+    position: relative;
+    top: -5px;
+}
+
+.topad .btn {
+    display: block;
+    width: 142px;
+    height: 38px;
+    border: solid 1px #fff;
+    color: #fff;
+    margin: 30px auto;
+    line-height: 38px;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.topad .btn:hover {
+    color: #ff343f;
+    border-color: #ff343f;
+}
+
+.topad .close {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: 40px;
+    top: 40px;
+    background: url(http://icon.dyrs.cc/topad.png!c) no-repeat -466px -34px;
+    z-index: 5;
+    transition: all ease .3s;
+}
+
+.topad .close:hover {
+    transform: rotate(180deg);
+}
+
+/**
+ *	分站首页
+ */
+.topad2 .bar .line {
+    width: 1200px;
+}
+
+.topad2 .list {
+    width: 1230px;
+}
+
+.guide2, .allLike, .team2 {
+    margin-top: 55px;
+    overflow: hidden;
+}
+
+.index2 .win-title {
+    margin-top: 0;
+}
+
+.index2 .win-title .tit {
+    font-size: 21px;
+}
+
+.index2 .win-title a {
+    position: static;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.index2 .win-title .more {
+    background: #525252;
+    font-size: 12px;
+    color: #c6c5c5;
+}
+
+.index2 .win-title .pull-right {
+    padding-top: 8px;
+}
+
+.index2 .ability, .index2 .adorn-case {
+    margin-top: 55px
+}
+
+.index2 .slider-prev {
+    margin-left: -310px;
+}
+
+.index2 .slider-nav {
+    padding-left: 135px;
+}
+
+/*热装楼盘*/
+.hotLp {
+    background: #3e3e3e;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.hotLp .container {
+    overflow: hidden;
+}
+
+.hotLp ul {
+    text-align: center;
+    width: 1220px
+}
+
+.hotLp li {
+    float: left;
+    width: 289px;
+    height: 385px;
+    overflow: hidden;
+    margin-right: 15px;
+    position: relative;
+}
+
+.hotLp .win-title {
+    margin-top: 12px;
+    border-color: #5d5d5d
+}
+
+.hotLp .win-title .tit {
+    border-color: #da2f2f;
+    color: #fff;
+}
+
+.hotLp li h2 {
+    height: 55px;
+    line-height: 55px;
+    font-weight: normal;
+    border-bottom: solid 1px #fff;
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 5px;
+    font-size: 24px;
+}
+
+.hotLp li p {
+    height: 43px;
+    line-height: 43px;
+    margin-bottom: 5px;
+}
+
+.hotLp li p span {
+    padding: 0 5px;
+}
+
+.hotLp li a {
+    display: block;
+    background: #f5f5f5;
+}
+
+.hotLp li a:hover {
+    color: #fff;
+    background: #f74848;
+}
+
+.hotLp li a:hover h2 {
+    border-color: #ff7979;
+}
+
+.hotLp li a:hover .text-red {
+    color: #ffe477
+}
+
+.hotLp li .tips {
+    width: 134px;
+    height: 34px;
+    margin-left: -67px;
+    background: #000;
+    opacity: .7;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    visibility: hidden;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.hotLp li .tips i {
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0;
+    border-color: #000 transparent #fff;
+    margin-left: -3px;
+}
+
+.hotLp li:hover .tips {
+    visibility: visible;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+/*家装案例*/
+.adorn-case .box1 {
+    padding-left: 483px;
+    overflow: hidden;
+}
+
+.adorn-case .bigPic {
+    float: left;
+    margin-left: -483px;
+    position: relative;
+    overflow: hidden;
+}
+
+.adorn-case .bigPic img {
+    width: 468px;
+    height: 450px;
+}
+
+.adorn-case .bigPic .bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.adorn-case .bigPic .bar .shadow {
+    width: 100%;
+    height: 80px;
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+
+.adorn-case .bigPic .bar .txt {
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    left: 5%;
+    z-index: 10;
+}
+
+.adorn-case .box1 a {
+    color: #fff;
+}
+
+.adorn-case .bigPic .tit {
+    font-size: 16px;
+    margin: 13px 0 5px;
+}
+
+.adorn-case .bigPic .ico-new {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 51px;
+    height: 51px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -234px;
+    z-index: 1;
+}
+
+.adorn-case .bigPic .pic span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 38px;
+    width: 114px;
+    background: #ff3434;
+    opacity: .8;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    margin: -19px 0 0 -57px;
+    visibility: hidden;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+
+.adorn-case .bigPic .pic:hover span {
+    visibility: visible;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.adorn-case .pic1 {
+    width: 398px;
+    height: 195px;
+    overflow: hidden;
+    position: relative;
+}
+
+.adorn-case .pic1 img {
+    width: 398px;
+    height: 195px;
+}
+
+.adorn-case .pic2 {
+    width: 304px;
+    height: 195px;
+    margin-left: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.adorn-case .pic2 img {
+    width: 404px;
+    height: 195px;
+    max-width: none;
+}
+
+.adorn-case .pic2 .shadow {
+    background: #000;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.adorn-case .pic2 .ico-360 {
+    width: 71px;
+    height: 104px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -105px -182px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -52px 0 0 -35px;
+    z-index: 1;
+}
+
+.adorn-case .pic3 {
+    width: 191px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px 0 0 15px;
+}
+
+.adorn-case .pic3 img {
+    width: 191px;
+    height: 240px;
+}
+
+.adorn-case .pic4 {
+    width: 304px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px 0 0 15px;
+}
+
+.adorn-case .pic4 img {
+    width: 304px;
+    height: 240px;
+}
+
+.adorn-case .pic1 .bar .txt, .adorn-case .pic3 .bar .txt, .adorn-case .pic4 .bar .txt {
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    left: 5%;
+    z-index: 10;
+}
+
+.adorn-case .pic1 .bar, .adorn-case .pic3 .bar, .adorn-case .pic4 .bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.adorn-case .pic1 .bar .shadow, .adorn-case .pic3 .bar .shadow, .adorn-case .pic4 .bar .shadow {
+    width: 100%;
+    height: 26px;
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+
+.adorn-case .pic1:hover .shadow, .adorn-case .pic3:hover .shadow, .adorn-case .pic4:hover .shadow {
+    background: #ff3030;
+}
+
+.adorn-case .box1 img {
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.adorn-case .box1 a:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.adorn-case .box2 {
+    background: #f6f6f6;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.adorn-case .box2 a {
+    color: #333;
+}
+
+.adorn-case .case-list {
+    margin-top: 0;
+}
+
+.adorn-case .box1 .pic2 img {
+    transition: all linear 3s;
+    -webkit-transition: all linear 3s;
+}
+
+.adorn-case .box1 .pic2:hover img {
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+}
+
+.adorn-case .box1 .pic2 .shadow {
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.adorn-case .box1 .pic2:hover .shadow {
+    opacity: 0;
+}
+
+/*设计团队*/
+.team2 a.abtn {
+    position: absolute;
+    top: 100px;
+    display: block;
+    height: 87px;
+    width: 41px;
+    overflow: hidden;
+    text-indent: -20000px;
+    background: url(http://icon.dyrs.cc/ico5.png!c) no-repeat;
+}
+
+.team2 a.aleft {
+    left: 0;
+    background-position: -41px 0;
+}
+
+.team2 a.aleft:hover {
+    left: 0;
+    background-position: -41px -87px;
+}
+
+.team2 a.aright {
+    right: 0;
+}
+
+.team2 a.aright:hover {
+    right: 0;
+    background-position: 0 -87px;
+}
+
+.team2 a.agrayright, a.agrayleft {
+    display: none;
+}
+
+.team2 .productshow {
+    position: relative;
+    overflow: hidden;
+}
+
+.team2 .productshow .scrollcontainer {
+    width: 1200px;
+    height: 372px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.team2 .productshow .scrollcontainer ul {
+    width: 20000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.team2 .productshow .scrollcontainer li {
+    float: left;
+    width: 228px;
+    height: 372px;
+    padding: 0 15px 0 0;
+    text-align: center;
+}
+
+.team2 .info {
+    background: #f6f6f6;
+    height: 92px;
+}
+
+.team2 .info .p1 {
+    width: 200px;
+    height: 38px;
+    border-bottom: solid 1px #fff;
+    line-height: 38px;
+    margin: 0 auto;
+}
+
+.team2 .info .p1 a {
+    color: #333;
+}
+
+.team2 .info .p1 a:hover {
+    color: #ff343f;
+}
+
+.team2 .info .name {
+    display: inline-block;
+    font-size: 18px;
+    max-width: 4em;
+    vertical-align: middle;
+}
+
+.team2 .info .job {
+    position: relative;
+    top: 3px;
+}
+
+.team2 .info .p2 {
+    line-height: 27px;
+    color: #666;
+}
+
+.team2 .info .p3 a {
+    float: left;
+    width: 50%;
+    height: 26px;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    background: #828282;
+    opacity: .9;
+}
+
+.team2 .info .p3 .a2 {
+    background: #ff4444;
+}
+
+.team2 .info .p3 a:hover {
+    opacity: 1;
+}
+
+.team2 .btnBox {
+    height: 70px;
+    background: #f6f6f6;
+    text-align: center;
+    margin-top: 17px;
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+.team2 .btnBox a {
+    display: inline-block;
+    width: 222px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    border: solid 1px #666;
+    margin: 0 10px;
+    background: #fff;
+}
+
+.team2 .btnBox a:hover {
+    border-color: #ff3030;
+}
+
+.team2 .menu {
+    position: relative;
+}
+
+.team2 .menu .bd {
+    width: 145px;
+    background: #fff;
+    border: solid 1px #ddd;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    padding: 10px 0;
+    z-index: 10;
+    text-align: center;
+    display: none;
+}
+
+.team2 .menu .bd a {
+    font-size: 12px;
+    display: block;
+    color: #333;
+}
+
+.team2 .menu .bd a:hover {
+    color: #ff343f;
+}
+
+.team2 .menu .hd .ico {
+    display: inline-block;
+    width: 12px;
+    height: 7px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -10px;
+    margin-left: 3px;
+}
+
+.team2 .menu .hd {
+    margin: 0 20px 0 0;
+}
+
+/*家装指南*/
+.guide2 .content {
+    padding-left: 453px;
+    overflow: hidden;
+}
+
+.guide2 .box1 {
+    float: left;
+    margin-left: -453px;
+    width: 438px;
+}
+
+.guide2 .box1 .info {
+    height: 80px;
+    padding: 0 10px;
+    background: #464646;
+    color: #e9e9e9;
+}
+
+.guide2 .box1 .info .p1 {
+    font-size: 14px;
+    padding: 10px 0 5px;
+}
+
+.guide2 .box1 .info .p2 {
+    height: 38px;
+    overflow: hidden;
+}
+
+.guide2 .box2 {
+    float: left;
+    width: 373px;
+    height: 185px;
+    overflow: hidden;
+}
+
+.guide2 .box2 .b1 {
+    width: 186px;
+    height: 185px;
+    background: #f4f4f4;
+    text-align: center;
+    position: relative;
+}
+
+.guide2 .box2 .b1 .angle_r {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent #f4f4f4 transparent #f4f4f4;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.guide2 .box2:hover .angle_r {
+    border-color: transparent #ff4d4d transparent #ff4d4d
+}
+
+.guide2 .box2 .b1 .angle_l {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent #f4f4f4 transparent #f4f4f4;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.guide2 .box2:hover .angle_l {
+    border-color: transparent #ff4d4d transparent #ff4d4d
+}
+
+.guide2 .box2 .p1 {
+    font-size: 24px;
+    font-family: '宋体';
+    border-bottom: solid 1px #fff;
+    width: 120px;
+    margin: 28px auto 0;
+}
+
+.guide2 .box2 .p2 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.guide2 .box2 .p3 {
+    color: #666;
+    padding: 0 10px;
+    height: 38px;
+    overflow: hidden;
+}
+
+.guide2 .box2 .p4 {
+    width: 13px;
+    height: 13px;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+.guide2 .box2 .p4 i {
+    display: block;
+    position: absolute;
+}
+
+.guide2 .box2 .p4 .line1 {
+    width: 100%;
+    height: 1px;
+    background: #f00;
+    left: 0;
+    top: 6px;
+}
+
+.guide2 .box2 .p4 .line2 {
+    height: 100%;
+    width: 1px;
+    background: #f00;
+    top: 0;
+    left: 6px;
+}
+
+.guide2 .box2:hover .b1 {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.guide2 .box2:hover .p1 {
+    border-color: #ff7272;
+}
+
+.guide2 .box2:hover p {
+    color: #fff;
+}
+
+.guide2 .box2:hover .p4 i {
+    background: #f8ff37;
+}
+
+/*大家都喜欢的案例*/
+.allLike a.abtn {
+    position: absolute;
+    top: 70px;
+    display: block;
+    height: 87px;
+    width: 41px;
+    overflow: hidden;
+    text-indent: -20000px;
+    background: url(http://icon.dyrs.cc/ico5.png!c) no-repeat;
+}
+
+.allLike a.aleft {
+    left: 0;
+    background-position: -41px 0;
+}
+
+.allLike a.aleft:hover {
+    left: 0;
+    background-position: -41px -87px;
+}
+
+.allLike a.aright {
+    right: 0;
+}
+
+.allLike a.aright:hover {
+    right: 0;
+    background-position: 0 -87px;
+}
+
+.allLike a.agrayright, a.agrayleft {
+    display: none;
+}
+
+.allLike .productshow {
+    position: relative;
+    overflow: hidden;
+}
+
+.allLike .scrollcontainer {
+    width: 1200px;
+    height: 228px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.allLike .scrollcontainer ul {
+    width: 20000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.allLike .scrollcontainer li {
+    float: left;
+    width: 228px;
+    height: 228px;
+    padding: 0 15px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.allLike .scrollcontainer .info .shadow {
+    height: 36px;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 228px;
+}
+
+.allLike .scrollcontainer .info p {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 218px;
+    height: 36px;
+    line-height: 36px;
+    z-index: 1;
+}
+
+.allLike .scrollcontainer .info a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+
+.allLike .link {
+    width: 1220px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.allLike .link li {
+    float: left;
+    width: 290px;
+    height: 210px;
+    margin-right: 14px;
+    background: #efefef;
+}
+
+.allLike .link .ico {
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin: 33px auto 5px;
+    background: url(http://icon.dyrs.cc/ico3.png!c) no-repeat;
+}
+
+.allLike .link .ico-1 {
+    background-position: 0 -127px;
+}
+
+.allLike .link .ico-2 {
+    background-position: -97px -127px;
+}
+
+.allLike .link .ico-3 {
+    background-position: -195px -127px;
+}
+
+.allLike .link .ico-4 {
+    background-position: -290px -127px;
+}
+
+.allLike .link .p1 {
+    width: 115px;
+    border-bottom: dashed 1px #ddd;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.allLike .link .p2 {
+    width: 120px;
+    margin: 5px auto 0;
+    color: #666;
+}
+
+/**
+ *	获奖设计师
+ */
+.winning-desi .desi-list {
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 0 20px;
+}
+
+.winning-desi .desi-list .row {
+    width: 98.35%;
+    margin: 0 auto;
+}
+
+.winning-desi .desi-list .item {
+    width: 570px;
+    height: 755px;
+    margin: 20px auto 0;
+    position: relative;
+}
+
+.winning-desi .desi-list .item .des-head {
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.winning-desi .desi-list .item .box1 {
+    padding-left: 205px;
+}
+
+.winning-desi .desi-list .item .box2 {
+    background: #f2f2f2;
+    padding: 10px 0 10px 205px;
+    margin-top: 5px;
+}
+
+.winning-desi .desi-list .item .des-name {
+    font-size: 22px;
+}
+
+.winning-desi .desi-list .item .des-tit {
+    padding-left: 5px;
+}
+
+.winning-desi .desi-list .item .p1 {
+    padding: 5px 0
+}
+
+.winning-desi .desi-list .item .p2 {
+    height: 50px;
+    overflow: hidden;
+}
+
+.winning-desi .desi-list .item .p2 span {
+    margin-right: 10px;
+}
+
+.winning-desi .desi-list .item .box2 p {
+    font-size: 14px;
+    height: 42px;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.winning-desi .desi-list .item .box2 a {
+    color: #ff4951;
+}
+
+.winning-desi .desi-list .item .box3 {
+    position: relative;
+    height: 570px;
+}
+
+.winning-desi .desi-list .item .box3 .shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background: #000;
+    transition: all ease .3s;
+}
+
+.winning-desi .desi-list .item .box3 a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 160px;
+    height: 35px;
+    border: solid 1px #fff;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+    line-height: 35px;
+    margin: -17px 0 0 -80px;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all ease .5s;
+}
+
+.winning-desi .desi-list .item .box3:hover .shadow {
+    visibility: visible;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.winning-desi .desi-list .item .box3:hover a {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/**
+ *	金牌工队列表
+ */
+.goldteam-list .cat-filter {
+    background: #fff;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 25px 0;
+}
+
+.goldteam-list .cat-filter .tit {
+    font-size: 16px;
+    width: 110px;
+}
+
+.goldteam-list .cat-filter .list {
+    width: 1080px;
+    min-height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.goldteam-list .cat-filter.active .list {
+    height: auto;
+}
+
+.goldteam-list .cat-filter .list a {
+    margin-right: 35px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.goldteam-list .cat-filter .list a.active {
+    color: #ff4953;
+}
+
+.goldteam-list .cat-filter .more {
+    width: 16px;
+    height: 16px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -58px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.goldteam-list .cat-filter.active .more {
+    background-position: 0 -75px;
+}
+
+.goldteam-list .content {
+    margin-top: 40px;
+}
+
+.goldteam-list .item {
+    background: #fff;
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.goldteam-list .item-box {
+    padding-left: 265px;
+    position: relative;
+}
+
+.goldteam-list .item-box .selectBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 36px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.goldteam-list .item-box .head-box {
+    width: 245px;
+    height: 326px;
+    overflow: hidden;
+    margin-left: -265px;
+    position: relative
+}
+
+.goldteam-list .item-box .head-box img {
+    width: 100%;
+    height: auto;
+    border: solid 1px #f7f7f7;
+}
+
+.goldteam-list .ico-rem {
+    width: 26px;
+    height: 52px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -93px;
+    position: absolute;
+    left: 10px;
+    top: -1px;
+}
+
+.goldteam-list .name-box {
+    padding-top: 15px;
+}
+
+.goldteam-list .name-box .name {
+    font-size: 20px;
+    color: #333;
+}
+
+.goldteam-list .name-box .name:hover {
+    color: #ff4953;
+}
+
+.goldteam-list .name-box .tag {
+    background: #ffe42e;
+    color: #f54b12;
+    padding: 3px 10px;
+    margin: 0 5px
+}
+
+.goldteam-list .name-box .stars {
+    display: inline-block;
+    width: 25px;
+    height: 23px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -77px -262px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px
+}
+
+.goldteam-list .info-box {
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.goldteam-list .info-box .line {
+    margin: 0 5px;
+    width: 1px;
+    height: 8px;
+    display: inline-block;
+    background: #d5d5d5;
+}
+
+.goldteam-list .work-tit {
+    padding: 53px 0 12px;
+    border-top: solid 1px #ddd;
+}
+
+.goldteam-list .work-pic {
+    width: 615px;
+    *width: auto;
+}
+
+.goldteam-list .work-pic a {
+    display: block;
+}
+
+.goldteam-list .work-pic img {
+    width: 190px;
+    height: 142px;
+}
+
+/**
+ *	金牌工队详情
+ */
+.goldteam-works {
+    padding: 10px 20px 20px;
+}
+
+.goldteam-works .win-title {
+    margin-top: 0;
+}
+
+.goldteam-works .win-title .line {
+    color: #ccc;
+    line-height: 40px;
+    margin: 0 15px;
+}
+
+.goldteam-works .win-title span a {
+    float: left;
+    position: static;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.goldteam-works .win-title .active {
+    border-bottom: 1px solid #000;
+    color: #333;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 40px;
+}
+
+.goldteam-works .item {
+    width: 278px;
+    height: 278px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.goldteam-works .item img {
+    width: 278px;
+    height: auto;
+}
+
+.goldteam-works .item .info {
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    text-align: center;
+}
+
+.goldteam-works .item .info .p1 {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.goldteam-works .item .info .city {
+    font-size: 12px;
+}
+
+.goldteam-works .row {
+    margin: 0 -7px;
+}
+
+.goldteam-works .item a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.goldteam-works .item .tag {
+    position: absolute;
+    width: 70px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.goldteam-works .item .tag-1 {
+    background: #ff2f2f;
+}
+
+.goldteam-works .item .tag-2 {
+    background: #ffa311;
+}
+
+.goldteam-works .item .tag-3 {
+    background: #d6bb05;
+}
+
+.goldteam-list dl.info {
+    border-top: solid 1px #ddd;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    line-height: 24px;
+}
+
+.goldteam-list dl.info dd {
+    font-size: 12px;
+    color: #666;
+}
+
+.goldteam-list .kefu {
+    display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    line-height: 30px;
+}
+
+/**
+ *	右侧提交信息global
+ */
+.submit-info {
+    padding: 15px;
+    color: #666;
+    position: relative;
+}
+
+.submit-info h4 {
+    padding: 20px 0 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+
+.submit-info .p1 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.submit-info .txt {
+    width: 236px;
+    padding: 0 5px;
+    color: #666;
+    height: 33px;
+    line-height: 33px \9;
+    border: solid 1px #ccc;
+    margin-top: 10px;
+}
+
+.submit-info select.txt {
+    width: 248px;
+    color: #666;
+    height: 33px;
+    line-height: 33px \9;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    margin-top: 10px;
+}
+
+.submit-info .btn {
+    width: 100%;
+    height: 33px;
+    margin-top: 10px;
+    border-radius: 0;
+}
+
+.submit-info .p2 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.submit-info .list {
+    border-top: solid 1px #ddd;
+    line-height: 24px;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.submit-info .list i {
+    color: #ff4c43;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.submit-info .list li {
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.submit-info .ico-tag {
+    width: 41px;
+    height: 41px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -36px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/**
+ *	右侧手风琴列表global
+ */
+.accordion {
+    padding: 0 10px;
+}
+
+.accordion .tit {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: solid 1px #ddd;
+    font-size: 14px;
+}
+
+.accordion ol {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px 0;
+}
+
+.accordion li {
+    height: 30px;
+    overflow: hidden;
+}
+
+.accordion .active {
+    height: auto;
+}
+
+.accordion a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion img {
+    margin: 5px auto;
+}
+
+.accordion .active a {
+    color: #ff343f;
+}
+
+/**
+ *	精英设计师
+ */
+.elite-list .filter-box {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.elite-list .filter.JSfixed {
+    width: 1160px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.elite-list .filter {
+    background: #424242;
+    color: #b2b2b2;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.elite-list .filter select {
+    border: 0;
+    padding: 4px 2px;
+    max-width: 200px;
+    min-width: 90px;
+    height: 30px;
+}
+
+.elite-list .filter .shop {
+    margin: 0 10px;
+}
+
+.elite-list .search {
+    width: 310px;
+    height: 30px;
+    position: relative;
+    background: #fff;
+}
+
+.elite-list .search .txt {
+    width: 220px;
+    height: 30px;
+    line-height: 30px \9;
+    border: 0;
+    padding: 0 5px;
+}
+
+.elite-list .search .btn {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+}
+
+.elite-list .list {
+    margin-top: 20px;
+    padding: 20px 15px;
+    overflow: hidden;
+}
+
+.elite-list .list .item {
+    width: 280px;
+    height: 370px;
+    line-height: 22px;
+    border: solid 1px #f8f8f8;
+    box-shadow: 0 1px 1px #f5f5f5;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.elite-list .ico-tag {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 50px;
+    height: 66px;
+    background: url(http://icon.dyrs.cc/ico-tag.png) no-repeat;
+    z-index: 1;
+}
+
+.elite-list .ico-tag-2 {
+    background-position: -50px 0;
+}
+
+.elite-list .list .item img {
+    display: block;
+    height: auto;
+}
+
+.elite-list .list .box1 {
+    position: relative;
+    width: 100%;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.elite-list .list .box1 .shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .5;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all ease .2s;
+    -webkit-transition: all ease .2s;
+}
+
+.elite-list .list .box1 p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all ease .2s;
+    -webkit-transition: all ease .2s;
+}
+
+.elite-list .list .box1:hover p {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.elite-list .list .box1 .zixun, .elite-list .list .box1 .guihua {
+    position: absolute;
+    bottom: 0;
+    width: 137px;
+    height: 34px;
+    line-height: 34px;
+    border: solid 1px #fff;
+    color: #000;
+    transition: all ease .1s;
+    -webkit-transition: all ease .1s;
+    background: #f1f1f1;
+}
+
+.elite-list .list .box1 p a.zixun {
+    left: 0;
+}
+
+.elite-list .list .box1 p a.guihua {
+    right: 0;
+}
+
+.elite-list .list .box1 p a:hover {
+    background: #ff343e;
+    border-color: #ff343e;
+    color: #fff;
+}
+
+.elite-list .list .box2 {
+    width: 245px;
+    border-bottom: solid 1px #ddd;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.elite-list .list .name {
+    font-size: 18px;
+    display: inline-block;
+    max-width: 6em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.elite-list .list .job {
+    position: relative;
+    top: 3px;
+}
+
+.elite-list .list .box3 {
+    width: 245px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+    color: #666;
+    padding: 5px 0;
+}
+
+.elite-list .list .box3 .col-xs-12 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/**
+ *	精英设计师详情
+ */
+.elite-detaile .here {
+    position: absolute;
+    color: #fff;
+}
+
+.elite-detaile .here a {
+    color: #fff;
+}
+
+.elite-detaile .here a:hover {
+    text-decoration: underline;
+}
+
+.elite-detaile-banner {
+    height: 265px;
+    color: #fff;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.elite-detaile-banner .headPic {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: solid 2px #fff;
+    margin: 53px auto 0;
+}
+
+.elite-detaile-banner .headPic img {
+    border-radius: 50%;
+}
+
+.elite-detaile-banner .name {
+    font-size: 16px;
+}
+
+.elite-detaile-banner .jingyan {
+    color: #cacaca;
+}
+
+.elite-detaile-nav {
+    height: 60px;
+    box-shadow: 0 0 3px #ccc;
+    text-align: center;
+    background: #fff;
+}
+
+.elite-detaile-nav .container {
+    overflow: hidden;
+}
+
+.elite-detaile-nav a {
+    float: left;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    border-left: solid 1px #ddd;
+    margin-left: -1px;
+}
+
+.elite-detaile-nav a:hover {
+    background: #f1f1f1;
+}
+
+.elite-detaile-nav .active {
+    height: 58px;
+    border-bottom: solid 2px #fe353f;
+    color: #fe353f;
+}
+
+.elite-detaile .content {
+    margin-top: 20px;
+}
+
+.elite-detaile-content {
+    overflow: hidden;
+    padding: 10px 20px 20px;
+}
+
+.elite-detaile-content .win-title {
+    margin: 0;
+}
+
+.elite-detaile-content .seeMore {
+    display: block;
+    height: 46px;
+    background: #302e31;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    font-size: 14px;
+    clear: both;
+}
+
+.elite-detaile-content .seeMore:hover {
+    opacity: .8;
+}
+
+.elite-detaile-huxing {
+    line-height: 22px;
+    color: #666;
+    padding-bottom: 20px;
+}
+
+.elite-detaile-huxing .fen_floor_cont {
+    padding: 20px 0 0;
+}
+
+.elite-detaile-info .box {
+    margin-top: 20px;
+    padding-left: 300px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.elite-detaile-info .box .headPic {
+    float: left;
+    margin-left: -300px;
+}
+
+.elite-detaile-info dl {
+    border-top: solid 1px #ddd;
+    padding: 6px 0 10px;
+    margin-top: -1px;
+}
+
+.elite-detaile-info dt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.elite-detaile-content .list {
+    padding: 0;
+    margin: 20px -6px 0;
+}
+
+.elite-detaile-content .paging {
+    padding: 10px 0;
+}
+
+.elite-detaile-content .article {
+    color: #666;
+    line-height: 22px;
+}
+
+.elite-detaile-content .article h1 {
+    font-size: 26px;
+    color: #333;
+    font-weight: normal;
+    padding: 30px 0 15px;
+}
+
+.elite-detaile-content .article img {
+    max-width: 100%;
+    display: inline;
+}
+
+.elite-detaile-content .article p {
+    text-indent: 2em;
+    margin: 1em 0;
+}
+
+.elite-detaile-content .info-bar {
+    font-size: 14px;
+}
+
+.elite-detaile-content .info-bar i {
+    font-style: normal;
+    padding: 0 5px;
+    color: #ccc;
+}
+
+.elite-detaile-content .con {
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.elite-detaile-content .share2 {
+    width: 200px;
+    margin: 20px auto 0;
+}
+
+.elite-detaile-content .prev-next-tab span {
+    color: #333;
+}
+
+.elite-detaile-content .prev-next-tab p {
+    display: inline;
+    margin: 0 15px;
+}
+
+.elite-detaile-content .prev-next-tab .ico-angle {
+    display: inline-block;
+    margin: 0 3px;
+    border-width: 8px 5px 0;
+    border-color: #999 transparent #fff;
+}
+
+.elite-detaile-content .prev-next-tab .ico-angle.top {
+    border-width: 0 5px 8px;
+    border-color: #fff transparent #999;
+}
+
+.elite-detaile-content .remend {
+    margin: 0 -2%;
+    overflow: hidden;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.elite-detaile-content .remend li {
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+}
+
+.elite-detaile-content .remend .dot {
+    font-size: 25px;
+    padding-right: 5px;
+    font-family: Trebuchet MS;
+    color: #f00;
+}
+
+.elite-detaile-content .remend a {
+    width: 100%;
+}
+
+.elite-detaile-content .remend .tit {
+    width: 310px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/**
+ *	案例global
+ */
+.case .item {
+    width: 280px;
+    margin: 0 auto 10px;
+    position: relative;
+    height: 340px;
+}
+
+.case .item .pic {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    display: block;
+}
+
+.case .item .pic img {
+    width: 280px;
+    height: 280px;
+}
+
+.case .item .info {
+    height: 56px;
+    border: solid 1px #ddd;
+}
+
+.case .item .p1 {
+    padding-left: 15px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #6a6a6a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+}
+
+.case .item .p2 {
+    padding-left: 15px;
+    line-height: 22px;
+    color: #8f8f8f;
+}
+
+.case {
+    margin: 20px -5px 10px;
+}
+
+.case .item .headPic {
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.case .item .headPic img {
+    border-radius: 50%;
+}
+
+/**
+ *	设计团队
+ */
+.team-list .cat-filter {
+    background: #fff;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 25px 0;
+}
+
+.team-list .cat-filter .tit {
+    font-size: 16px;
+    width: 110px;
+}
+
+.team-list .cat-filter .list {
+    width: 1090px;
+    min-height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-list .cat-filter.active .list {
+    height: auto;
+}
+
+.team-list .cat-filter .list a {
+    margin-right: 35px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.team-list .cat-filter .list a.active {
+    color: #ff343f;
+}
+
+.team-list .cat-filter.active .more {
+    background-position: 0 -75px;
+}
+
+.team-list .content {
+    margin-top: 40px;
+}
+
+.team-list .item {
+    min-height: 280px;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.team-list .item-box {
+    padding-left: 398px;
+    position: relative;
+}
+
+.team-list .item-box .selectBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 36px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.team-list .item-box .head-box {
+    width: 373px;
+    height: 280px;
+    margin-left: -398px;
+    overflow: hidden;
+    border: solid 1px #f7f7f7;
+    position: relative
+}
+
+.team-list .item-box .head-box img {
+    width: auto;
+    height: auto;
+}
+
+.team-list .ico-rem {
+    width: 26px;
+    height: 52px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -93px;
+    position: absolute;
+    left: 10px;
+    top: -1px;
+}
+
+.team-list .name-box {
+    font-size: 20px;
+    width: 320px;
+    padding-top: 5px;
+}
+
+.team-list .info-box {
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 22px;
+}
+
+.team-list .info-box .line {
+    margin: 0 5px;
+    width: 1px;
+    height: 8px;
+    display: inline-block;
+    background: #d5d5d5;
+}
+
+.team-list .work-tit {
+    padding: 15px 0 5px;
+    border-top: solid 1px #ddd;
+}
+
+.team-list .work-tit a {
+    color: #999;
+    font-size: 12px;
+}
+
+.team-list .work-tit a:hover {
+    color: #ff343f;
+}
+
+.team-list .work-pic {
+    width: 495px;
+}
+
+.team-list .work-pic a {
+    display: block;
+}
+
+/**
+ *	团队详情
+ */
+.team-list .address {
+    font-size: 12px;
+}
+
+.team-list .address .ico {
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -19px 0;
+    margin-left: 3px;
+    position: relative;
+    top: 1px;
+}
+
+.team-list .shop-info {
+    border-top: solid 1px #ddd;
+    padding: 10px 0;
+}
+
+.team-list .shop-info dd {
+    height: 70px;
+    font-size: 12px;
+    color: #666;
+    padding-top: 5px;
+    line-height: 22px;
+}
+
+.team-list .item .btnBox button {
+    height: 30px;
+    padding: 0 15px;
+    margin: 15px 10px 0 0
+}
+
+.team-list .serverLine {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 40px;
+    font-size: 18px;
+    color: #ff343f;
+}
+
+.team-list .serverLine .ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -46px -142px;
+    position: relative;
+    right: 4px;
+    top: 3px;
+}
+
+.tema-detaile {
+    padding: 10px 20px 1px;
+}
+
+.tema-detaile .win-title {
+    margin-top: 0;
+}
+
+.tema-detaile .elite-list .list {
+    margin: 20px -6px 0;
+    padding: 0;
+}
+
+.tema-detaile .huxing {
+    color: #666;
+    line-height: 24px;
+}
+
+.tema-detaile .huxing .item {
+    padding-left: 262px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tema-detaile .huxing .pic {
+    width: 250px;
+    float: left;
+    margin-left: -262px;
+    height: 184px;
+    overflow: hidden;
+}
+
+.tema-detaile .huxing .img {
+    height: auto;
+}
+
+.tema-detaile .huxing .tit a {
+    display: inline;
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+.tema-detaile .huxing .tit a:hover {
+    color: #ff343f;
+}
+
+.tema-detaile .huxing .info {
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.tema-detaile .huxing .tit {
+    padding-top: 5px;
+}
+
+.tema-detaile .huxing .info .line {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 0 5px;
+}
+
+.des-laowai .item {
+    height: 512px;
+    padding: 20px 0 20px 410px;
+    position: relative;
+}
+
+.des-laowai .item .pic {
+    float: left;
+    margin-left: -410px;
+}
+
+.des-laowai .item .zixun {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 28px;
+}
+
+.des-laowai .item .item-tit {
+    font-size: 24px;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+}
+
+.des-laowai .item .item-tit .en {
+    margin-left: 10px;
+    color: #ff3232;
+}
+
+.des-laowai .item .con-scroll {
+    height: 202px;
+    padding-top: 15px;
+}
+
+.des-laowai .item dl {
+    line-height: 22px;
+}
+
+.des-laowai .item dt {
+    font-size: 14px;
+}
+
+.des-laowai .item dd {
+    color: #666;
+}
+
+.des-laowai .win-title {
+    height: 30px;
+    margin-top: 17px;
+}
+
+.des-laowai .win-title .tit {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.des-laowai .win-title a {
+    line-height: 30px;
+    font-size: 12px;
+    top: 0;
+}
+
+.des-laowai .news {
+    width: 120%;
+}
+
+.des-laowai .news a {
+    color: #fff;
+}
+
+.des-laowai .news li {
+    float: left;
+    width: 254px;
+    margin-right: 14px;
+}
+
+.des-laowai .news p {
+    height: 30px;
+    line-height: 30px;
+    background: #6a6a6a;
+    padding: 0 15px;
+}
+
+.des-laowai .news a:hover p {
+    background: #ff4444;
+}
+
+.des-laowai .rem-des-box .row {
+    width: 120%;
+}
+
+.des-laowai .rem-des-box .container {
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.des-laowai .rem-des-box .win-title {
+    height: 40px;
+}
+
+.des-laowai .rem-des-box .win-title .tit {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.des-laowai .rem-des {
+    float: left;
+    text-align: center;
+    width: 228px;
+    margin-right: 15px;
+    line-height: 30px;
+    background: #f6f6f6;
+    position: relative;
+}
+
+.des-laowai .rem-des img {
+    display: block;
+}
+
+.des-laowai .rem-des .border {
+    border: solid 1px #eaeaea;
+}
+
+.des-laowai .rem-des .box1 {
+    border-bottom: solid 1px #fff;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.des-laowai .rem-des .box1 .name {
+    font-size: 18px;
+}
+
+.des-laowai .rem-des .box1 .job {
+    font-size: 12px;
+}
+
+.des-laowai .rem-des .see {
+    transition: background ease .2s;
+    -webkit-transition: background ease .2s;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background: #828282;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 198px;
+    width: 100%;
+    visibility: hidden;
+}
+
+.des-laowai .rem-des:hover .see {
+    visibility: visible;
+}
+
+.des-laowai .see:hover {
+    background: #ff4444;
+}
+
+.des-laowai .rem-des .box2 {
+    line-height: 24px;
+    padding: 5px 0 10px;
+}
+
+.des-laowai .rem-des .box2 p {
+    color: #666;
+}
+
+.des-laowai .rem-des .col {
+    margin: 0 5px;
+}
+
+.des-laowai a.abtn {
+    position: absolute;
+    top: 70px;
+    display: block;
+    height: 30px;
+    width: 16px;
+    overflow: hidden;
+    text-indent: -20000px;
+    background: url(http://icon.dyrs.cc/ico.png!c) -78px -34px no-repeat;
+}
+
+.des-laowai a.aleft {
+    left: 0;
+}
+
+.des-laowai a.aright {
+    right: 0;
+    background-position: -94px -34px;
+}
+
+.des-laowai a.agrayright, a.agrayleft {
+    opacity: .5;
+}
+
+.des-laowai .productshow {
+    position: relative;
+}
+
+.des-laowai .productshow .scrollcontainer {
+    width: 745px;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.des-laowai .productshow .scrollcontainer ul {
+    width: 20000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.des-laowai .productshow .scrollcontainer li {
+    float: left;
+    width: 240px;
+    height: 180px;
+    padding: 0 4px;
+    text-align: center;
+    position: relative;
+}
+
+.des-laowai .productshow .scrollcontainer p {
+    height: 30px;
+    line-height: 30px;
+    background: #666;
+    display: none;
+}
+
+.des-laowai .productshow .scrollcontainer p span {
+    display: block;
+    margin: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+/**
+ *	栏目页面
+ */
+.lanmu .win-title {
+    margin: 0;
+}
+
+.lanmu .panel-list {
+    width: 562px;
+    box-shadow: 1px 1px 2px #ccc;
+    padding: 10px 20px 20px 10px;
+}
+
+.lanmu .panel-list .box {
+    padding: 20px 0 0 197px;
+}
+
+.lanmu .panel-list .pic {
+    float: left;
+    margin-left: -197px;
+}
+
+.lanmu .panel-list dl {
+    padding-top: 8px;
+}
+
+.lanmu .panel-list dt a {
+    color: #ff6a63;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.lanmu .panel-list dd {
+    line-height: 24px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.lanmu .panel-list a:hover {
+    text-decoration: underline;
+}
+
+.lanmu .panel-list ul {
+    clear: both;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.lanmu .panel-list li span {
+    padding-right: 10px;
+    color: #ff6a63;
+}
+
+.lanmu .left-box {
+    padding: 10px 20px 20px;
+}
+
+.lanmu .left-box .item {
+    width: 278px;
+    margin: 20px auto 0;
+    border-bottom: dashed 1px #ddd;
+    padding-bottom: 5px;
+}
+
+.lanmu .left-box .item .pic {
+    display: block;
+    width: 278px;
+    height: 208px;
+    overflow: hidden;
+}
+
+.lanmu .left-box .item dt a {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.lanmu .left-box .item dt a:hover {
+    color: #ff343f;
+}
+
+.lanmu .left-box .item dd {
+    height: 70px;
+    line-height: 22px;
+    overflow: hidden;
+    color: #666;
+}
+
+.lanmu .left-box .row {
+    margin: 0 -7px;
+}
+
+.lanmu .slider .slider-content {
+    height: 440px;
+}
+
+/**
+ *	登录注册找回密码
+ */
+.login-reg-pwd {
+    height: 770px;
+    background: url(http://icon.dyrs.cc/login_bg.jpg!c) no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login-reg-pwd .left {
+    width: 320px;
+    padding-right: 60px;
+    border-right: solid 1px #ddd;
+}
+
+.login-reg-pwd .right {
+    width: 305px;
+    overflow: hidden;
+}
+
+.login-reg-pwd .box {
+    width: 710px;
+    padding: 45px;
+    margin: 175px auto 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.login-reg-pwd .txt {
+    width: 300px;
+    height: 38px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: solid 1px #ddd;
+}
+
+.login-reg-pwd h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.login-reg-pwd .left .row {
+    width: 320px;
+}
+
+.login-reg-pwd .remem-pwd input {
+    position: relative;
+    top: 1px;
+}
+
+.login-reg-pwd .submit {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    background: #2a9cd5;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-reg-pwd .submit:hover {
+    background: #228dc2;
+}
+
+.login-reg-pwd .pt15 {
+    padding-top: 15px;
+}
+
+.login-reg-pwd .regBtn {
+    text-decoration: underline
+}
+
+.login-reg-pwd .regBtn:hover {
+    color: #ff343f !important;
+}
+
+.login-reg-pwd label {
+    color: #666;
+    font-size: 12px;
+}
+
+.login-reg-pwd label input {
+    position: relative;
+    top: 1px;
+}
+
+.login-reg-pwd .third_login a {
+    display: block;
+    float: left;
+    width: 64px;
+    height: 65px;
+    background: url(http://icon.dyrs.cc/new_third_login_ico.png!c) no-repeat;
+    opacity: .8; /*margin:0 0 14px 90px;*/
+    margin-left: 35px;
+}
+
+.login-reg-pwd .third_login a:hover {
+    opacity: 1;
+}
+
+.login-reg-pwd .third_login a span {
+    display: none;
+}
+
+.login-reg-pwd .third_login .sina a, .login-reg-pwd .third_login .qq a {
+    margin: 0;
+    background: none;
+}
+
+.login-reg-pwd .third_login .sina {
+    background-position: 0px 0px;
+}
+
+.login-reg-pwd .third_login .wx {
+    background-position: -190px 0px;
+}
+
+.login-reg-pwd .third_login .qq {
+    background-position: -96px 0px;
+}
+
+.login-reg-pwd .third_login h3 {
+    margin: 60px 0 50px;
+    text-align: center;
+}
+
+.login-reg-pwd input.error {
+    border-color: #F00;
+    color: #f00;
+}
+
+.login-reg-pwd p.error {
+    margin: 5px 0 -10px
+}
+
+.login-reg-pwd .step {
+    height: 40px;
+    margin-bottom: 10px;
+    background: url(http://icon.dyrs.cc/step.gif!c) no-repeat center top;
+}
+
+.login-reg-pwd .step-2 {
+    background-position: center -42px;
+}
+
+.login-reg-pwd .step-3 {
+    background-position: center -84px;
+}
+
+.login-reg-pwd .step-txt {
+    font-size: 14px;
+    color: #999;
+}
+
+.login-reg-pwd form {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.login-reg-pwd .txt {
+    width: 298px;
+    height: 38px;
+    line-height: 38px \9;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: solid 1px #ddd;
+}
+
+.login-reg-pwd .phTips {
+    margin-top: 20px;
+}
+
+.login-reg-pwd .vcode {
+    width: 155px;
+}
+
+.login-reg-pwd .getcode {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background: #ff343f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-reg-pwd .getcode[disabled], .login-reg-pwd .getcode[disabled]:hover {
+    color: #999;
+    background: #eee;
+}
+
+.login-reg-pwd .getcode:hover {
+    background: #f12732;
+}
+
+.login-reg-pwd .wait {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background: #ff343f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-reg-pwd .wait[disabled], .login-reg-pwd .wait[disabled]:hover {
+    color: #999;
+    background: #eee;
+}
+
+.login-reg-pwd .wait:hover {
+    background: #f12732;
+}
+
+.login-reg-pwd h4 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 60px 0;
+}
+
+.login-reg-pwd .bindPhone .left {
+    height: 280px;
+}
+
+.login-reg-pwd .bindPhone .nickname {
+    font-size: 16px;
+    color: #666;
+    padding: 10px 0 0;
+}
+
+.login-reg-pwd .bindPhone .right p {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.login-reg-pwd .bindPhone .right img {
+    margin: 10px 0;
+}
+
+.login-reg-pwd .bindPhone .right a {
+    text-decoration: underline;
+}
+
+/**
+ *	个人中心
+ */
+.usercenter .page-title {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #eaeaea;
+    color: #666;
+}
+
+.usercenter .page-title .tit {
+    font-size: 14px;
+}
+
+/*主页*/
+.usercenter .menu {
+    width: 150px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.usercenter .content {
+    width: 1020px;
+    overflow: hidden;
+}
+
+.usercenter .menu-list {
+    background: #fff;
+}
+
+.usercenter .menu-list a {
+    display: block;
+}
+
+.usercenter .menu-list dt a {
+    background: #302e30;
+    color: #fff;
+}
+
+.usercenter .menu-list dd a {
+    border-bottom: solid 1px #f7f7f7;
+}
+
+.usercenter .menu-list a.cur {
+    background: #ff343f;
+    color: #fff;
+}
+
+.usercenter .dashboard {
+    font-size: 14px;
+}
+
+.usercenter .dashboard .box1 {
+    width: 112px;
+    height: 97px;
+    padding: 13px 0 0 108px;
+}
+
+.usercenter .dashboard .box1 img {
+    border-radius: 50%;
+    float: left;
+    margin-left: -94px;
+}
+
+.usercenter .dashboard .box1 .name {
+    padding: 15px 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.usercenter .dashboard .box1 .edit {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.usercenter .dashboard .box1 .edit:hover {
+    color: #ff343f;
+}
+
+.usercenter .dashboard .box2 {
+    width: 220px;
+    height: 85px;
+    margin-left: 20px;
+    padding: 25px 0 0 65px;
+}
+
+.usercenter .dashboard .box2 i.ico {
+    float: left;
+    margin-left: -35px;
+    width: 20px;
+    height: 20px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -86px -103px;
+}
+
+.usercenter .dashboard .bind {
+    float: left;
+    width: 26px;
+    height: 26px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat;
+    margin: 10px 10px 0 0;
+}
+
+.usercenter .dashboard .sina {
+    background-position: -114px -61px;
+}
+
+.usercenter .dashboard .sina.cur {
+    background-position: -145px -61px;
+}
+
+.usercenter .dashboard .tqq {
+    background-position: -114px -90px;
+}
+
+.usercenter .dashboard .tqq.cur {
+    background-position: -145px -90px;
+}
+
+.usercenter .dashboard .qq {
+    background-position: -114px -119px;
+}
+
+.usercenter .dashboard .qq.cur {
+    background-position: -145px -119px;
+}
+
+.usercenter .dashboard .wx {
+    background-position: -114px -148px;
+}
+
+.usercenter .dashboard .wx.cur {
+    background-position: -145px -148px;
+}
+
+.usercenter .dashboard .box3 {
+    width: 410px;
+    height: 85px;
+    padding: 25px 0 0 65px;
+}
+
+.usercenter .dashboard .box3 i.ico {
+    float: left;
+    margin-left: -35px;
+    width: 20px;
+    height: 20px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -86px -123px;
+}
+
+.usercenter .dashboard .box3 .null {
+    font-size: 18px;
+    color: #999;
+    padding-top: 5px;
+}
+
+.usercenter .dashboard .box3 .msg {
+    font-size: 14px;
+    color: #999;
+    padding-top: 5px;
+}
+
+.usercenter .dashboard .box3 .msg a {
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+.usercenter .dashboard .box3 .msg a:hover {
+    color: #ff343f;
+}
+
+.usercenter .panel {
+    padding: 10px 20px 20px;
+    overflow: hidden;
+}
+
+.usercenter .win-title {
+    margin-top: 0;
+}
+
+/*通用列表*/
+.usercenter .com-list {
+    width: 120%;
+    font-size: 14px;
+}
+
+.usercenter .com-list .item {
+    float: left;
+    width: 233px;
+    height: 233px;
+    overflow: hidden;
+    margin-right: 16px;
+    position: relative;
+    text-align: center;
+}
+
+.usercenter .com-list .item span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background: #000;
+    color: #fff;
+    opacity: .6;
+    line-height: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.usercenter .hotcase {
+    padding: 10px 20px 20px;
+    overflow: hidden;
+}
+
+/*收藏的案例*/
+.usercenter .com-list-2 .null {
+    color: #666;
+    padding: 0 8px;
+}
+
+.usercenter .com-list-2 .item {
+    width: 316px;
+    margin: 0 auto 16px;
+    position: relative;
+    height: 375px;
+    overflow: hidden;
+}
+
+.usercenter .com-list-2 .pic {
+    display: block;
+    width: 316px;
+    height: 316px;
+    overflow: hidden;
+}
+
+.usercenter .com-list-2 .del {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -147px;
+    display: none;
+}
+
+.usercenter .com-list-2 .item:hover .del {
+    display: block;
+}
+
+.usercenter .com-list-2 .info {
+    height: 56px;
+    border: solid 1px #ddd;
+}
+
+.usercenter .com-list-2 .p1 {
+    padding-left: 15px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #6a6a6a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 210px;
+}
+
+.usercenter .com-list-2 .p2 {
+    padding-left: 15px;
+    line-height: 22px;
+    color: #8f8f8f;
+}
+
+.usercenter .com-list-2 {
+    margin: 20px -8px 10px;
+}
+
+.usercenter .com-list-2 .headPic {
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*收藏的图片*/
+.usercenter .com-list-3 .null {
+    color: #666;
+    padding: 0 8px;
+}
+
+.usercenter .com-list-3 .item {
+    width: 316px;
+    margin: 0 auto 16px;
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+.usercenter .com-list-3 .pic {
+    display: block;
+    width: 316px;
+    height: 316px;
+}
+
+.usercenter .com-list-3 .del {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat 0 -147px;
+    display: none;
+}
+
+.usercenter .com-list-3 .item:hover .del {
+    display: block;
+}
+
+.usercenter .com-list-3 .info {
+    height: 56px;
+}
+
+.usercenter .com-list-3 .p1 {
+    padding-left: 15px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #6a6a6a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 280px;
+}
+
+.usercenter .com-list-3 .p2 {
+    padding-left: 15px;
+    line-height: 22px;
+    color: #8f8f8f;
+}
+
+.usercenter .com-list-3 {
+    margin: 0 -8px 0;
+}
+
+.usercenter .com-list-3 .headPic {
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    right: 20px;
+    top: 215px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*个人资料*/
+.usercenter .user-info {
+    padding: 5px 20px 20px;
+}
+
+.usercenter .edit-head {
+    padding-left: 100px;
+}
+
+.usercenter .edit-head .pic {
+    float: left;
+    margin-left: -100px;
+}
+
+.usercenter .edit-head .pic img {
+    border-radius: 50%;
+}
+
+.usercenter .edit-head .modify {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-align: center;
+    float: left;
+    border: solid 1px #ddd;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.usercenter .edit-head .modify input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.usercenter .info-list {
+    color: #666;
+    line-height: 25px;
+}
+
+.usercenter .info-list li {
+    padding: 10px 0 10px 75px;
+}
+
+.usercenter .info-list label {
+    float: left;
+    margin-left: -75px;
+}
+
+.usercenter .info-list .btn-red {
+    width: 70px;
+    height: 30px;
+    margin: 20px 0 0 123px;
+}
+
+.usercenter .info-list .txt {
+    border: solid 1px #ddd;
+    width: 190px;
+    height: 25px;
+    padding: 0 5px;
+}
+
+.usercenter .info-list select {
+    height: 25px;
+    width: 203px;
+    border: solid 1px #ddd;
+    margin-right: 5px;
+}
+
+.usercenter .info-list .edit-phone {
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.usercenter .info-list .border0 {
+    border: 0;
+    background: #fff;
+    width: 100px;
+}
+
+.usercenter .info-list span.error {
+    padding-left: 5px;
+}
+
+.usercenter .info-list input.error {
+    border-color: #F00;
+}
+
+.usercenter .validateCode {
+    padding-top: 10px;
+}
+
+.usercenter .validateCode img {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.usercenter .validateCode a {
+    text-decoration: underline;
+    color: #003cd6;
+}
+
+.usercenter .validateCode a:hover {
+    color: #d42021
+}
+
+/*我的收藏*/
+.usercenter .myshare {
+    padding: 5px 20px 20px;
+    overflow: hidden;
+}
+
+.usercenter .myshare .share-title {
+    border: 0;
+    margin: -10px 0 5px;
+    line-height: 30px;
+    position: relative;
+}
+
+.usercenter .myshare .share-title .tit {
+    font-size: 18px;
+}
+
+.usercenter .myshare .share-title .small {
+    font-size: 14px;
+    color: #666;
+}
+
+.usercenter .myshare .share-title a {
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    color: #999;
+}
+
+.usercenter .myshare .share-title a:hover {
+    color: #ff343f;
+}
+
+.usercenter .myshare .com-list-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.usercenter .myshare .com-list {
+    margin-top: 5px;
+}
+
+/*我的预约*/
+.usercenter .bookmsg {
+    width: 120%;
+}
+
+.usercenter .bookmsg h5 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.usercenter .bookmsg ul {
+    width: 270px;
+    padding: 0 23px 10px;
+    float: left;
+    border-top: 2px #ff7279 solid;
+    border-bottom: 24px #949494 solid;
+    font-size: 14px;
+    margin: 0 16px 16px 0;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.usercenter .bookmsg li {
+    line-height: 31px;
+    border-top: 1px #f0f0f0 solid;
+    margin-top: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.usercenter .bookmsg li span {
+    color: #666666
+}
+
+.usercenter .bookmsg-name {
+    padding: 10px 0;
+    line-height: 24px;
+}
+
+.usercenter .bookmsg-name p {
+    text-align: center;
+    line-height: 20px
+}
+
+.usercenter .bookmsg-ico {
+    background: url(http://icon.dyrs.cc/bookico.png) no-repeat;
+}
+
+.usercenter .bookmsg-tel {
+    padding-left: 25px;
+    background-position: 3px 9px;
+}
+
+.usercenter .bookmsg-house {
+    padding-left: 25px;
+    background-position: -14px -19px;
+}
+
+.usercenter .bookmsg-area {
+    padding-left: 25px;
+    background-position: -30px -45px;
+}
+
+.usercenter .bookmsg-style {
+    padding-left: 25px;
+    background-position: -45px -69px;
+}
+
+.usercenter .bookmsg-time {
+    padding-left: 25px;
+    background-position: -60px -98px;
+}
+
+/*浏览记录*/
+.usercenter .historyBox {
+    padding: 10px 20px 20px;
+}
+
+.usercenter .history {
+    height: 430px;
+    margin-left: 10px;
+    border-left: 1px #eaeaea solid;
+    margin-top: 30px;
+}
+
+.usercenter .historylist {
+    height: 430px;
+    overflow: auto;
+    margin-left: -12px;
+}
+
+.usercenter .historyDay {
+    margin-bottom: 30px;
+}
+
+.usercenter .historyDay-time {
+    padding: 0 7px;
+    height: 21px;
+    line-height: 21px;
+    background: #ff343f;
+    color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.usercenter .historyDay-dian {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #fff;
+    margin-top: 7px;
+    margin-right: 5px
+}
+
+.usercenter .historyDay-look {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(http://icon.dyrs.cc/bookico.png) -80px -134px no-repeat;
+    margin-right: 12px;
+    margin-top: 2px
+}
+
+.usercenter .historyDay-dl {
+    margin-left: 1px;
+    margin-top: 18px;
+}
+
+.usercenter .historyDay-dl dt {
+    height: 24px;
+    line-height: 24px;
+}
+
+.usercenter .historyDay-dl dd {
+    margin-top: 10px
+}
+
+.usercenter .historyDay-msg-img {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 31px;
+}
+
+/*我的红包*/
+.usercenter .myMoney .box1 {
+    padding: 10px 20px 20px;
+}
+
+.usercenter .myMoney .box2 {
+    padding: 10px 20px 20px;
+}
+
+.usercenter .myMoney .box2 .win-title {
+    margin-top: 0;
+}
+
+.usercenter .redb {
+    display: inline-block;
+    color: #fbd17c;
+    position: relative;
+    width: 312px;
+    height: 172px;
+    background: url(http://icon.dyrs.cc/redb.jpg!c) no-repeat;
+}
+
+.usercenter .redb span {
+    position: absolute;
+}
+
+.usercenter .redb .s1 {
+    font-size: 24px;
+    font-weight: bold;
+    left: 18px;
+    top: 20px;
+}
+
+.usercenter .redb .s2 {
+    left: 20px;
+    top: 113px;
+}
+
+.usercenter .redb .s3 {
+    left: 5px;
+    top: 130px;
+}
+
+.usercenter .redb .s4 {
+    font-size: 40px;
+    left: 150px;
+    top: 28px;
+}
+
+.usercenter .redb .s4 em {
+    font-size: 37px;
+    font-style: normal;
+}
+
+.usercenter .redb .s5 {
+    width: 150px;
+    height: 55px;
+    overflow: hidden;
+    left: 160px;
+    top: 100px;
+    text-align: left;
+}
+
+/*近期活动*/
+.usercenter .activity .cityNav {
+    border: solid 1px #eaeaea;
+    line-height: 25px;
+    background: #f8f8f8;
+    font-size: 14px;
+}
+
+.usercenter .activity .cityNav .tit {
+    width: 110px;
+    padding: 10px 0;
+    text-align: center;
+    color: #666;
+}
+
+.usercenter .activity .cityNav .city {
+    border-left: solid 1px #eaeaea;
+    width: 857px;
+    padding: 10px 10px 10px 0;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.usercenter .activity .cityNav a {
+    margin-left: 15px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.usercenter .activity .cityNav a.active {
+    color: #ff343f;
+}
+
+.usercenter .hdList .item {
+    overflow: hidden;
+    border-bottom: solid 1px #f3f3f3;
+    padding: 20px 0 20px 215px;
+    line-height: 24px;
+    color: #666;
+    position: relative;
+}
+
+.usercenter .hdList .pic {
+    float: left;
+    margin-left: -215px;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.usercenter .hdList .tit {
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+.usercenter .hdList .tit a {
+    color: #333;
+}
+
+.usercenter .hdList .tit a:hover {
+    color: #ff343e;
+}
+
+.usercenter .hdList .con {
+    max-height: 48px;
+    overflow: hidden;
+}
+
+.usercenter .hdList ul span {
+    color: #333;
+    font-size: 14px;
+}
+
+.usercenter .hdList .webim, .usercenter .hdList .seeinfo {
+    width: 90px;
+    margin-left: 5px;
+}
+
+.usercenter .hdList .btnBox {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.usercenter .hdList .count {
+    height: 30px;
+    background: #ff343f;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.usercenter .hdList .count .ico {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -182px -130px;
+}
+
+/*信息提示*/
+.tipPage {
+    overflow: hidden;
+}
+
+.tipPage .container {
+    min-height: 500px;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+}
+
+.tipPage .tipInfo {
+    margin: 200px 0;
+}
+
+.tipPage .ico {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat;
+}
+
+.tipPage .ico-1 {
+    width: 32px;
+    height: 32px;
+    background: url(http://icon.dyrs.cc/loading1.gif) no-repeat;
+}
+
+.tipPage .ico-2 {
+    background-position: -49px -188px;
+}
+
+.tipPage .ico-3 {
+    background-position: -49px -217px;
+}
+
+/**
+ *	家装指南详情
+ */
+.guide-detaile-content {
+    overflow: hidden;
+    padding: 10px 20px 20px;
+}
+
+.guide-detaile-content .win-title {
+    margin: 0;
+}
+
+.guide-detaile-content .seeMore {
+    display: block;
+    height: 46px;
+    background: #302e31;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    font-size: 14px;
+}
+
+.guide-detaile-content .seeMore:hover {
+    opacity: .8;
+}
+
+.guide-detaile-huxing {
+    line-height: 22px;
+    color: #666;
+    padding-bottom: 20px;
+}
+
+.guide-detaile-huxing .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.guide-detaile-huxing .item .info {
+    padding: 0 10px;
+    border: solid 1px #ddd;
+}
+
+.guide-detaile-huxing .item h4 {
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    line-height: 38px;
+}
+
+.guide-detaile-huxing .item p {
+    padding: 5px 0;
+}
+
+.guide-detaile-info .box {
+    margin-top: 20px;
+    padding-left: 300px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.guide-detaile-info .box .headPic {
+    float: left;
+    margin-left: -300px;
+}
+
+.guide-detaile-info dl {
+    border-top: solid 1px #ddd;
+    padding: 6px 0 10px;
+    margin-top: -1px;
+}
+
+.guide-detaile-info dt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.guide-detaile-content .list {
+    padding: 0;
+    margin: 20px -6px 0;
+}
+
+.guide-detaile-content .paging {
+    padding: 10px 0;
+}
+
+.guide-detaile-content .article {
+    color: #666;
+    line-height: 22px;
+}
+
+.guide-detaile-content .article h1 {
+    font-size: 26px;
+    color: #333;
+    font-weight: normal;
+    padding: 30px 0 15px;
+}
+
+.guide-detaile-content .article img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.guide-detaile-content .article p {
+    text-indent: 2em;
+    margin: 1em 0;
+}
+
+.guide-detaile-content .info-bar {
+    font-size: 14px;
+}
+
+.guide-detaile-content .info-bar i {
+    font-style: normal;
+    padding: 0 5px;
+    color: #ccc;
+}
+
+.guide-detaile-content .con {
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.guide-detaile-content .share2 {
+    width: 200px;
+    margin: 20px auto 0;
+}
+
+.guide-detaile-content .prev-next-tab span {
+    color: #333;
+}
+
+.guide-detaile-content .prev-next-tab p {
+    display: inline;
+    margin: 0 15px;
+}
+
+.guide-detaile-content .prev-next-tab .ico-angle {
+    display: inline-block;
+    margin: 0 3px;
+    border-width: 8px 5px 0;
+    border-color: #999 transparent #fff;
+}
+
+.guide-detaile-content .prev-next-tab .ico-angle.top {
+    border-width: 0 5px 8px;
+    border-color: #fff transparent #999;
+}
+
+.guide-detaile-content .remend {
+    margin: 0 -2%;
+    overflow: hidden;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.guide-detaile-content .remend li {
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+}
+
+.guide-detaile-content .remend .dot {
+    font-size: 25px;
+    padding-right: 5px;
+    font-family: Trebuchet MS;
+    color: #f00;
+}
+
+.guide-detaile-content .remend a {
+    width: 100%;
+}
+
+.guide-detaile-content .remend .tit {
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/**
+ *	404
+ */
+.p404 {
+    height: 100px;
+    margin: 100px 0;
+    padding: 360px 0 0 480px;
+    background: url(http://icon.dyrs.cc/404.png!c) no-repeat 160px center;
+    position: relative;
+}
+
+.p404 .tip {
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+}
+
+.p404 .btnBox a {
+    float: left;
+    margin-right: 11px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: solid 1px #b8b8b8;
+    transition: all ease .2s;
+}
+
+.p404 .btnBox a:hover {
+    background: #ff3232;
+    color: #fff;
+    border-color: #ff3232;
+}
+
+/**
+ *	网站地图
+ */
+.site-map dt, .site-map dd, .site-map dd a {
+    float: left;
+}
+
+.site-map dl {
+    border-bottom: solid 1px #f7f7f7;
+    overflow: hidden;
+    padding: 24px 0;
+    margin: 0 18px;
+}
+
+.site-map dt {
+    width: 100px;
+    height: 36px;
+}
+
+.site-map dd {
+    width: 1060px;
+}
+
+.site-map dt a {
+    display: block;
+    width: 100px;
+    height: 36px;
+    background: #ff343f;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+}
+
+.site-map dd a {
+    height: 28px;
+    padding: 0 18px;
+    border: solid 1px #cacaca;
+    line-height: 28px;
+    margin: 3px 0 3px 10px;
+}
+
+.site-map dd a:hover {
+    border-color: #ff343e
+}
+
+/**
+ *	文章页面 （联系我们、店面查询、招聘信息）
+ */
+.article .leftNav {
+    border: solid 1px #e2e2e2;
+    background: #f1f1f1;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.article .leftNav a {
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 30px 0 50px;
+    border-top: solid 1px #ddd;
+    margin-top: -1px;
+}
+
+.article .leftNav a:hover {
+    background: #f8f8f8;
+    color: #000;
+}
+
+.article .leftNav .angle {
+    float: right;
+    margin: 19px -15px 0 0;
+    background: #fdf;
+    width: 10px;
+    height: 16px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -188px -270px;
+    opacity: .5;
+}
+
+.article .leftNav .ico {
+    float: left;
+    margin: 19px 0 0 -22px;
+    width: 16px;
+    height: 16px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat;
+}
+
+.article .leftNav .contact .ico {
+    background-position: -183px -150px;
+}
+
+.article .leftNav .shop .ico {
+    background-position: -183px -170px;
+}
+
+.article .leftNav .job .ico {
+    background-position: -183px -189px;
+}
+
+.article .leftNav .active, .article .leftNav .active:hover {
+    background-position: -183px -150px;
+    background: #fff;
+    border-left: solid 1px #ff343f;
+    margin-left: -1px;
+    color: #ff343f;
+}
+
+.article .leftNav .active .angle {
+    opacity: 1;
+}
+
+.article .leftNav .active.contact .ico {
+    background-position: -183px -209px;
+}
+
+.article .leftNav .active.shop .ico {
+    background-position: -183px -230px;
+}
+
+.article .leftNav .active.job .ico {
+    background-position: -183px -248px;
+}
+
+.article .submit-info .ico-tag {
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat;
+    background-position: 0 -190px;
+}
+
+/*店面查询*/
+.article .cityNav {
+    border: solid 1px #eaeaea;
+    line-height: 30px;
+    background: #f8f8f8;
+    font-size: 14px;
+}
+
+.article .cityNav .tit {
+    width: 110px;
+    text-align: center;
+    color: #666;
+}
+
+.article .cityNav .city {
+    border-left: solid 1px #eaeaea;
+    width: 777px;
+    padding-right: 15px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.article .cityNav a {
+    margin-left: 30px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.article .cityNav a.active {
+    color: #ff343f;
+}
+
+.article .cityNav .toggle:hover {
+    opacity: 1;
+}
+
+.article .map .menu {
+    width: 320px;
+    height: 600px;
+    background: #fff;
+    float: left;
+}
+
+.article .map .menu .con-scroll {
+    height: 570px;
+    overflow: hidden;
+}
+
+.article .map .menu .con-scroll .mCSB_container {
+    margin-right: 5px;
+}
+
+.article .map .menu .con-scroll .mCustomScrollBox .mCSB_scrollTools {
+    width: 5px;
+}
+
+.article .map .mCSB_draggerRail {
+    width: 5px;
+}
+
+.article .map .menu h2 {
+    height: 30px;
+    background: #ff343f;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.article .map .menu li {
+    padding: 10px 20px 10px 40px;
+    border-bottom: solid 1px #e1e1e1;
+    cursor: pointer;
+}
+
+.article .map .menu .num {
+    float: left;
+    margin: 3px 0 0 -20px;
+    width: 15px;
+    height: 20px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -88px -145px;
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+.article .map .menu h3 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.article .map .menu p {
+    color: #666;
+    line-height: 24px;
+}
+
+.article .map .menu li:hover, .article .map .menu li.active {
+    background: #f8f8f8;
+}
+
+.article .map .view {
+    height: 600px;
+    width: 585px;
+    float: left;
+}
+
+.article .map .view img {
+    max-width: none;
+}
+
+/*联系我们*/
+.article .address {
+    padding: 20px;
+    border-bottom: solid 1px #f4f4f4;
+    overflow: hidden;
+}
+
+.article .address h2 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+#storemap img {
+    max-width: none;
+}
+
+.article .address .pull-left {
+    padding: 20px 0 0 66px;
+    line-height: 24px;
+}
+
+.article .address .pull-left p span {
+    color: #666;
+}
+
+.article .address .bg-gray {
+    padding: 0;
+}
+
+.article .contactInfo {
+    padding-bottom: 20px;
+    overflow: hidden;
+    width: 120%;
+}
+
+.article .contactInfo li {
+    float: left;
+    width: 284px;
+    margin: 20px 20px 0 0;
+    line-height: 24px;
+    padding: 15px 15px 15px 122px;
+    border: solid 1px #f1f1f1;
+}
+
+.article .contactInfo .rect {
+    float: left;
+    margin-left: -105px;
+    width: 90px;
+    height: 90px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.article .contactInfo h3 {
+    font-weight: normal;
+    margin: 5px 0 8px;
+}
+
+.article .contactInfo .rect .ico {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(http://icon.dyrs.cc/ico2.png!c) no-repeat;
+    margin: 17px auto 5px;
+}
+
+.article .contactInfo .rect .ico-2 {
+    background-position: -42px 0;
+}
+
+.article .contactInfo .rect .ico-3 {
+    background-position: -82px 0;
+}
+
+.article .contactInfo .rect .ico-4 {
+    background-position: 0 -36px;
+}
+
+.article .contactInfo .rect .ico-5 {
+    background-position: -45px -36px;
+}
+
+.article .contactInfo .rect .ico-6 {
+    background-position: -93px -36px;
+}
+
+/*招聘信息*/
+.article .jobInfo {
+    padding: 15px;
+}
+
+.article .jobInfo h2 {
+    font-weight: normal;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+}
+
+.article .jobList .jobTag {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    background: #fe343f;
+    color: #fff;
+    float: left;
+}
+
+.article .jobList .jobTag i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -48px -169px;
+}
+
+.article .jobList dl {
+    line-height: 25px;
+    padding: 18px 0 15px;
+    border-top: solid 1px #f1f1f1;
+    margin-top: -1px;
+}
+
+.article .jobList dt {
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.article .jobList dd {
+    color: #666;
+}
+
+.article .jobList li {
+    list-style: decimal inside;
+}
+
+.article .jobList .toggle {
+    height: 25px;
+    border-top: solid 1px #f1f1f1;
+    position: relative;
+    margin-top: 10px;
+}
+
+.article .jobList .toggle p {
+    position: absolute;
+    left: 50%;
+    top: -9px;
+    line-height: 16px;
+    margin-left: -33px;
+    width: 50px;
+    height: 30px;
+    padding: 0 15px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.article .jobList .toggle .txt {
+    color: #b3b3b3;
+    display: block;
+}
+
+.article .jobList .toggle p:hover .txt {
+    color: #ff343f;
+    -moz-user-select: none;
+}
+
+.article .jobInfo .contact {
+    padding: 15px;
+    line-height: 24px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/*配套产品*/
+.peitao .win-title .tit {
+    font-size: 22px;
+}
+
+.peitao .top-banner {
+    height: 300px;
+    background: no-repeat center;
+    position: relative;
+}
+
+.peitao .here {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+}
+
+.peitao .here a {
+    color: #fff;
+}
+
+.peitao .here a:hover {
+    text-decoration: underline;
+}
+
+.peitao .pt-nav {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.peitao .pt-nav li {
+    float: left;
+}
+
+.peitao .pt-nav a {
+    color: #fff;
+    display: block;
+    padding: 0 30px;
+}
+
+.peitao .pt-nav a:hover, .peitao .pt-nav .zixun {
+    background: #1e1e1e;
+}
+
+.peitao .pt-nav .zixun {
+    color: #d42021;
+}
+
+.peitao .pt-nav .zixun i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(http://icon.dyrs.cc/ico.png!c) no-repeat -52px -247px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.peitao .pt-nav .active, .peitao .pt-nav .active:hover {
+    background: #d42021;
+}
+
+.peitao .pt-nav .nav-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+
+.peitao .pt-nav .container {
+    position: relative;
+    z-index: 2;
+}
+
+.peitao .twoMenu {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    display: none;
+}
+
+.peitao .twoMenu a {
+    float: left;
+    background: #e54344;
+    margin: 1px 1px 0 0;
+}
+
+.peitao .twoMenu a:hover {
+    background: #d42021;
+}
+
+.peitao li:hover .twoMenu {
+    display: block;
+}
+
+.peitao .titbox {
+    height: 30px;
+    width: 500px;
+    margin: 70px auto 50px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.peitao .titbox .line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-top: solid 1px #ddd;
+}
+
+.peitao .titbox .tit {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.peitao .titbox .ico-l, .peitao .titbox .ico-r {
+    position: absolute;
+    top: 10px;
+    background: #ddd;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+.peitao .titbox .ico-l {
+    left: 0;
+}
+
+.peitao .titbox .ico-r {
+    right: 0;
+}
+
+.peitao .product {
+    padding-left: 600px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.peitao .product .pic {
+    float: left;
+    width: 580px;
+    height: 446px;
+    overflow: hidden;
+    margin-left: -600px;
+}
+
+.peitao .product .brands img {
+    float: left;
+    border: solid 1px #ccc;
+    margin: 0 0 20px 20px;
+    width: 178px;
+    height: 78px;
+}
+
+.peitao .catList {
+    text-align: center;
+    border-bottom: dotted 3px #ddd;
+    padding-bottom: 10px;
+}
+
+.peitao .catList a {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 28px;
+    border: solid 1px #c0c0c0;
+    margin: 0 5px 10px;
+}
+
+.peitao .catList .active, .peitao .catList a:hover {
+    background: #ff4c43;
+    border-color: #ff4c43;
+    color: #fff;
+}
+
+.peitao .catList .tit {
+    font-size: 14px;
+    color: #666;
+    margin: -40px 0 20px;
+}
+
+.peitao .brandList {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.peitao .brandList dt {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.peitao .brandList img {
+    width: 178px;
+    height: 90px;
+    float: left;
+    border: solid 1px #ddd;
+    margin: 0 20px 20px 0;
+}
+
+.peitao .pic_txt {
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.peitao .pic_txt .pic, .peitao .pic_txt .txt {
+    width: 600px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.peitao .pic_txt p {
+    line-height: 30px;
+    font-size: 14px;
+    padding: 13px 20px 0;
+    color: #666;
+}
+
+.peitao .lattice {
+    text-align: center;
+}
+
+.peitao .lattice li {
+    float: left;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.peitao .lattice .ico {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(http://icon.dyrs.cc/pt-img-11.png!c) no-repeat;
+    margin: 80px auto 20px;
+}
+
+.peitao .lattice .ico-2 {
+    background-position: -50px 0;
+}
+
+.peitao .lattice .ico-3 {
+    background-position: -98px 0;
+}
+
+.peitao .lattice .ico-4 {
+    width: 55px;
+    background-position: -145px 0;
+}
+
+.peitao .lattice h5 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.peitao .lattice p {
+    font-size: 12px;
+    color: #666;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.peitao .shebei {
+    background: #f5f5f5;
+    text-align: center;
+    font-size: 14px;
+}
+
+.peitao .shebei li {
+    float: left;
+    width: 33.3333%;
+    height: 125px;
+}
+
+.peitao .shebei .bg {
+    background: #e4e4e4;
+}
+
+.peitao .shebei h5 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 28px 0 10px;
+    color: #ff343f;
+}
+
+.peitao .shebei .bg h5 {
+    color: #ebad29;
+}
+
+.peitao .muzuo {
+    width: 1202px;;
+}
+
+.peitao .muzuo li {
+    float: left;
+    margin: 1px 1px 0 0;
+    position: relative;
+}
+
+.peitao .muzuo .shadow {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=5);
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+}
+
+.peitao .muzuo li:hover .shadow {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    visibility: visible;
+}
+
+.peitao .muzuo .name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 106px;
+    height: 80px;
+    padding: 26px 0 0;
+    border: solid 1px #fff;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+    margin: -54px 0 0 -54px;
+    text-shadow: 1px 1px 1px #666;
+}
+
+.peitao .muzuo li:hover .name {
+    color: #f0da46;
+    border-color: #f0da46;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.ads_top {
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.xianzhi {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

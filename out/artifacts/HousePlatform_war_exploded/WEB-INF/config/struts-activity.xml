@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="activity-package" namespace="/activity" extends="base-package">
+        <action name="*" class="activityAction" method="{1}">
+            <result name="addActivityPage">/admin/addActivity.jsp</result>
+            <result name="addActivity" type="json"></result>
+            <result name="activityInfo" type="json"></result>
+            <result name="activityInfoPage">/admin/activityInfo.jsp</result>
+            <result name="activityDetail">/index/activityDetail.jsp</result>
+            <result name="activitySelfPagejson" type="json"></result>
+            <result name="activitySelfPage">/admin/activitySelfPage.jsp</result>
+            <result name="changeActivity" type="json"></result>
+            <result name="status" type="redirect">activitySelfPage</result>
+            <result name="addAgencyActivity">/agency/addActivity.jsp</result>
+            <result name="pagerByStatus" type="json"></result>
+            <result name="allActivityPage">/agency/allActivity.jsp</result>
+            <result name="agencyStatus" type="json"></result>
+            <result name="activityChange" type="json"></result>
+            <result name="navActivity" type="json"></result>
+            <result name="navActivityPage">/index/buildings/buildingActivity.jsp</result>
+            <result name="buildingsActivity" type="json"></result>
+        </action>
+    </package>
+</struts>

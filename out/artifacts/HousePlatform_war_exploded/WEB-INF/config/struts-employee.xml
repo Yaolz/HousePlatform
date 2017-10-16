@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="employee-package" namespace="/employee" extends="base-package">
+        <action name="*" class="employeeAction" method="{1}">
+            <result name="addEmployee" type="json"></result>
+            <result name="addEmployeePage">/agency/addEmployee.jsp</result>
+            <result name="allEmployee" type="json"></result>
+            <result name="allEmployeePage">/agency/allEmployee.jsp</result>
+            <result name="pagerByStatus" type="json"></result>
+            <result name="status" type="json"></result>
+            <result name="employeeChange" type="json"></result>
+            <result name="indexEmployee" type="json"></result>
+            <result name="navEmployeePage">/index/buildings/employee.jsp</result>
+        </action>
+    </package>
+</struts>
