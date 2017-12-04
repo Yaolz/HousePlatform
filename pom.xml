@@ -146,7 +146,7 @@
             <artifactId>commons-fileupload</artifactId>
             <version>${upload-version}</version>
             <scope>compile</scope>
-        </dependency>
+    </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>

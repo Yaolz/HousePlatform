@@ -6,7 +6,6 @@ import com.ht.bean.Role;
 import com.ht.bean.User;
 import com.ht.common.ControllerResult;
 import com.ht.common.EncriptUtil;
-import com.ht.price.UserPrice;
 import com.ht.service.AgencyService;
 import com.ht.service.EmployeeService;
 import com.ht.service.UserService;
