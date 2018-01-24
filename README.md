@@ -1,2 +1,0 @@
-# HousePlatform
-ssh项目
