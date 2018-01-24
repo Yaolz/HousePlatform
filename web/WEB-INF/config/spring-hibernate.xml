@@ -78,6 +78,7 @@
 
     <context:annotation-config></context:annotation-config>
 
+
     <bean id="downloadAction" class="com.ht.controller.DownloadAction" autowire="byName"  scope="prototype"/>
 
     <bean id="missionDAO" class="com.ht.dao.impl.MissionDAOImpl" autowire="byName"></bean>

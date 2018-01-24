@@ -370,7 +370,6 @@
        href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=shoulouwang@qq.com"></a>
 </div>
 </body>
-<script src="<%=path %>/index/js/index.js"></script>
 <script src="<%=path%>/public/js/jquery.min.js"></script>
 <script src="<%=path%>/public/js/bootstrap.min.js"></script>
 <script src="<%=path %>/layer-v3.1.0/layer/layer.js"></script>
